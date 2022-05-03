@@ -1,0 +1,88 @@
+$DarkShade100: #1F2041;
+$DarkShade75: rgba(31, 32, 65, 0.75);
+$DarkShade50: rgba(31, 32, 65, 0.5);
+$DarkShade25: rgba(31, 32, 65, 0.25);
+$DarkShade5: rgba(31, 32, 65, 0.05);
+$Purple: #BC9CFF;
+$Blue: #8BA4F9;
+$Green: #6FCF97;
+$White: #FFF;
+$radius: 5px;
+
+body {
+    background-color: $DarkShade5;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    color: $DarkShade75;
+    transition: font-weight 0.8s ease;
+}
+
+a:hover {
+    font-weight: 800;
+}
+
+.margin-line {
+    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 70px;
+    background: $White;
+}
+
+.header__topmenu {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__topmenu li {
+    margin-left: 20px;
+}
+
+.header__downmenu {
+    display: none;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.button__wrap {
+    background: linear-gradient(#BC9CFF, #8BA4F9);
+    border-radius: $radius;
+}
+
+.button__wrap:first-child {
+    margin-right: 20px;
+}
+
+.button__content {
+    margin: 2px;
+    padding: 10px;
+    border-radius: $radius;
+    background: $White;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button__content:hover {
+    background: none;
+}
+
+.header__login-line {
+    width: 2px;
+    height: 30px;
+    background-color: $DarkShade75;
+}
+
+.header__login-username {
+    margin-left: 10px;
+}
