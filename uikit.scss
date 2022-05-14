@@ -1,3 +1,6 @@
+/*-----------------------------------------------
+Constants
+-----------------------------------------------*/
 $DarkShade100: #1F2041;
 $DarkShade75: rgba(31, 32, 65, 0.75);
 $DarkShade50: rgba(31, 32, 65, 0.5);
@@ -11,7 +14,11 @@ $White: #FFF;
 $radius: 22px;
 $small_radius: 4px;
 
+/*-----------------------------------------------
+Common styles
+-----------------------------------------------*/
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -28,11 +35,12 @@ a {
     font-weight: 400;
     font-size: 14px;
     color: $DarkShade75;
-    transition: font-weight 0.8s ease;
+    text-shadow: 0 0 0 $DarkShade75, 0 0 0 $DarkShade75;
+    transition: text-shadow 0.5s ease;
 }
 
-a:hover {
-    font-weight: 700;
+a:hover, a:focus-within {
+    text-shadow: 0 0 1.2px $DarkShade75, 0 0 1.2px $DarkShade75;
 }
 
 h1 {
@@ -84,10 +92,6 @@ HEADER STYLES
     margin-right: 284px;
 }
 
-.header-nav {
-    flex-grow: 0;
-}
-
 .header__topmenu {
     display: flex;
     list-style-type: none;
@@ -96,19 +100,20 @@ HEADER STYLES
 .header__topmenu-link {
     margin-right: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 .header__downmenu {
     display: flex;
     flex-direction: column;
-    width: 120px;
+    width: 140px;
     padding: 8px 28px 28px 28px;
     position: absolute;
-    top: -300px;
+    top: -200px;
     left: 0px;
     z-index: 120;
     list-style-type: none;
-    background: linear-gradient(#BC9CFF, #8BA4F9);
+    background: linear-gradient($Purple, $Blue);
     border-radius: $small_radius;
     opacity: 0;
     transition: all 1s ease;
@@ -123,9 +128,20 @@ HEADER STYLES
     margin-top: 20px;
 }
 
-.header__downmenu-link a {
+.header__downmenu-link {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
     color: $White;
+    text-shadow: 0 0 0 $White, 0 0 0 $White;
+    transition: all 0.5s ease;
 }
+
+.header__downmenu-link:hover, .header__downmenu-link:focus-within{
+    color: $DarkShade50;
+}
+
 
 .header__login {
     display: flex;
@@ -133,30 +149,51 @@ HEADER STYLES
     align-items: center;
 }
 
+/* Header buttons style*/
 .button__wrap {
-    background: linear-gradient(#BC9CFF, #8BA4F9);
-    border-radius: $radius;
-}
-
-.button__wrap:first-child {
     margin-right: 20px;
+    background: linear-gradient(180deg, $Purple 0%, $Blue 100%);
+    border-radius: $radius;
+    transition: all 0.5s ease;
 }
 
-.button__content {
+.button__wrap:hover {
+    background: linear-gradient(180deg, fade-out($Purple, 0.5) 0%, fade-out($Blue, 0.5) 100%);
+}
+
+.button-entrance {
     margin: 2px;
     padding: 8px 18px;
     font-size: 12px;
     font-weight: 700;
     color: $Purple;
+    border: none;
+    outline: none;
     border-radius: $radius;
     background: $White;
     cursor: pointer;
     transition: all 0.8s ease;
 }
 
-.button__content:hover {
-    background: none;
+.button__register {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
     color: $White;
+    border: none;
+    outline: none;
+    border-radius: $radius;
+    background: linear-gradient(180deg, $Purple 0%, $Blue 100%);
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button__register:hover {
+    background: linear-gradient(180deg, fade-out($Purple, 0.5) 0%, fade-out($Blue, 0.5) 100%);
+}
+
+.button-entrance:hover {
+    opacity: 1;
 }
 
 .header__login-line {
@@ -180,6 +217,10 @@ HEADER STYLES
     height: 100%;
 }
 
+
+/*-------------------------------------------------------
+Media
+-------------------------------------------------------*/
 @media (max-width: 800px) {
     #burger {
       display: block;
@@ -189,12 +230,74 @@ HEADER STYLES
         display: none;
     }
 
+    .header__nav.active {
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .header__login.active {
+        display: flex;
+        z-index: 90;
+        position: absolute;
+        top: 300px;
+        left: 60px;
+        border-top: 2px solid $DarkShade10;
+        padding-top: 30px;
+    }
+
+    .header__nav.active .header__topmenu {
+        flex-direction: column;
+        margin-top: 45px;
+        padding: 30px 60px;
+        background-color: $White;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 50%;
+        border-radius: $small_radius;
+    }
+
+    .header__nav.active .header__topmenu-link {
+        margin-bottom: 20px;
+    }
+
+    .header__nav a {
+        font-size: 20px;
+    }
+
+    .header__downmenu {
+        width: auto;
+    }
+
+    .header__nav.active .header__downmenu {      
+        top: -20px;
+        left: -150px;
+        opacity: 0;
+    }
+
+    .header__nav.active .header__downmenu.active {
+        padding: 20px 50px 40px 50px;
+        left: 200px;
+        opacity: 1;
+    }
+
+    .header__nav.active .header__login {
+        display: block;
+    }
+
     .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 700px;
+        width: 600px;
         height: 70px;
         margin: auto;
+    }
+
+    .header__logo {
+        flex-grow: 1;
+        margin-right: 20px;
     }
   }
