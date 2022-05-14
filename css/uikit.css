@@ -1,4 +1,12 @@
+/*-----------------------------------------------
+Constants
+-----------------------------------------------*/
+/*-----------------------------------------------
+Common styles
+-----------------------------------------------*/
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -15,12 +23,13 @@ a {
   font-weight: 400;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
-  -webkit-transition: font-weight 0.8s ease;
-  transition: font-weight 0.8s ease;
+  text-shadow: 0 0 0 rgba(31, 32, 65, 0.75), 0 0 0 rgba(31, 32, 65, 0.75);
+  -webkit-transition: text-shadow 0.5s ease;
+  transition: text-shadow 0.5s ease;
 }
 
-a:hover {
-  font-weight: 700;
+a:hover, a:focus-within {
+  text-shadow: 0 0 1.2px rgba(31, 32, 65, 0.75), 0 0 1.2px rgba(31, 32, 65, 0.75);
 }
 
 h1 {
@@ -80,12 +89,6 @@ HEADER STYLES
   margin-right: 284px;
 }
 
-.header-nav {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
 .header__topmenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +99,7 @@ HEADER STYLES
 .header__topmenu-link {
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .header__downmenu {
@@ -106,10 +110,10 @@ HEADER STYLES
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 120px;
+  width: 140px;
   padding: 8px 28px 28px 28px;
   position: absolute;
-  top: -300px;
+  top: -200px;
   left: 0px;
   z-index: 120;
   list-style-type: none;
@@ -130,8 +134,19 @@ HEADER STYLES
   margin-top: 20px;
 }
 
-.header__downmenu-link a {
+.header__downmenu-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
   color: #FFF;
+  text-shadow: 0 0 0 #FFF, 0 0 0 #FFF;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header__downmenu-link:hover, .header__downmenu-link:focus-within {
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .header__login {
@@ -146,22 +161,29 @@ HEADER STYLES
           align-items: center;
 }
 
+/* Header buttons style*/
 .button__wrap {
-  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background: linear-gradient(#BC9CFF, #8BA4F9);
-  border-radius: 22px;
-}
-
-.button__wrap:first-child {
   margin-right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.button__content {
+.button__wrap:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.5)), to(rgba(139, 164, 249, 0.5)));
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.button-entrance {
   margin: 2px;
   padding: 8px 18px;
   font-size: 12px;
   font-weight: 700;
   color: #BC9CFF;
+  border: none;
+  outline: none;
   border-radius: 22px;
   background: #FFF;
   cursor: pointer;
@@ -169,9 +191,28 @@ HEADER STYLES
   transition: all 0.8s ease;
 }
 
-.button__content:hover {
-  background: none;
+.button__register {
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
   color: #FFF;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.button__register:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.5)), to(rgba(139, 164, 249, 0.5)));
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.button-entrance:hover {
+  opacity: 1;
 }
 
 .header__login-line {
@@ -195,12 +236,73 @@ HEADER STYLES
   height: 100%;
 }
 
+/*-------------------------------------------------------
+Media
+-------------------------------------------------------*/
 @media (max-width: 800px) {
   #burger {
     display: block;
   }
   .header__nav, .header__login {
     display: none;
+  }
+  .header__nav.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 28px;
+  }
+  .header__login.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 90;
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    border-top: 2px solid rgba(31, 32, 65, 0.1);
+    padding-top: 30px;
+  }
+  .header__nav.active .header__topmenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 45px;
+    padding: 30px 60px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 50%;
+    border-radius: 4px;
+  }
+  .header__nav.active .header__topmenu-link {
+    margin-bottom: 20px;
+  }
+  .header__nav a {
+    font-size: 20px;
+  }
+  .header__downmenu {
+    width: auto;
+  }
+  .header__nav.active .header__downmenu {
+    top: -20px;
+    left: -150px;
+    opacity: 0;
+  }
+  .header__nav.active .header__downmenu.active {
+    padding: 20px 50px 40px 50px;
+    left: 200px;
+    opacity: 1;
+  }
+  .header__nav.active .header__login {
+    display: block;
   }
   .header {
     display: -webkit-box;
@@ -212,8 +314,14 @@ HEADER STYLES
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 700px;
+    width: 600px;
     height: 70px;
     margin: auto;
+  }
+  .header__logo {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 20px;
   }
 }
