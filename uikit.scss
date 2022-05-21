@@ -68,6 +68,10 @@ h3 {
     display: none;
 }
 
+.mr-20 {
+    margin-right: 20px;
+}
+
 .mr-50 {
     margin-right: 50px;
 }
@@ -332,10 +336,34 @@ footer {
     display: inline;
     opacity: 1;
     transition: opacity 0.5s ease;
+    cursor: pointer;
 }
 
 .copyrignt__icon:hover {
     opacity: 0.5;
+}
+
+/* Copyright block */
+.copy__wrap {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin: 40px auto;
+    padding: 120px;
+    max-width: 768px; 
+    max-height: 367px; 
+    background-color: $White; 
+}
+
+.copy__logo {
+    margin: auto;
+}
+
+.copy__text {
+    margin-top: 20px; 
+    margin-bottom: 25px; 
+    line-height: 17px; 
+    color: $DarkShade75;
 }
 
 /*-------------------------------------------------------
@@ -442,6 +470,14 @@ Media
     .container {
         width: 600px;
         flex-direction: column;
+    }
+
+    .copyright__icon-wrap, .footer__title {
+        margin-top:  20px;
+    }
+
+    .input__wrap {
+        width: 50%;
     }
 
   }
