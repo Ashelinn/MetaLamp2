@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="dist/main.js" defer></script>
+
     <title>UI-Kit</title>
 </head>
 <body>
@@ -18,15 +20,15 @@
     <div class="header-wrap">
         <div class="header">
             <!-- logo -->
-            <div class="header__logo">
+            <div class="logo">
                 <img src="img/Logo.svg" alt="TOXIN logo">
             </div>
             <!-- Menu -->
             <div class="header__nav">
                 <ul class="header__topmenu">
-                    <li class="header__topmenu-link"><a href="#">О нас</a></li>
+                    <li class="header__topmenu-link"><a href="#" class="header__link-black">О нас</a></li>
                     <li class="header__topmenu-link link__show-more">
-                        <a href="#">Услуги <img src="img/expand_more.svg" alt="show more"></a>
+                        <a href="#" class="header__link-black">Услуги <img src="img/expand_more.svg" alt="show more"></a>
                         <ul class="header__downmenu">
                             <li><a href="#" class="header__downmenu-link">Услуга 1</a></li>
                             <li><a href="#" class="header__downmenu-link">Услуга 2</a></li>
@@ -36,10 +38,10 @@
                             <li><a href="#" class="header__downmenu-link">Услуга 3</a></li>
                         </ul>
                     </li>
-                    <li class="header__topmenu-link"><a href="#">Вакансии</a></li>
-                    <li class="header__topmenu-link"><a href="#">Новости</a></li>
+                    <li class="header__topmenu-link"><a href="#" class="header__link-black">Вакансии</a></li>
+                    <li class="header__topmenu-link"><a href="#" class="header__link-black">Новости</a></li>
                     <li class="header__topmenu-link link__show-more">
-                        <a href="#">Соглашения <img src="img/expand_more.svg" alt="show more"></a>
+                        <a href="#" class="header__link-black">Соглашения <img src="img/expand_more.svg" alt="show more"></a>
                         <ul class="header__downmenu">
                             <li><a href="#" class="header__downmenu-link">Соглашениe 1</a></li>
                             <li><a href="#" class="header__downmenu-link">Соглашениe 2</a></li>
@@ -56,7 +58,7 @@
                         Войти
                     </button>
                 </div>
-                <button class="button__register">
+                <button class="button-register">
                     Зарегестрироваться
                 </button>
             </div>
@@ -76,25 +78,25 @@
     <div class="header-wrap">
         <div class="header">
             <!-- logo -->
-            <div class="header__logo">
+            <div class="logo">
                 <img src="img/Logo.svg" alt="TOXIN logo">
             </div>
             <!-- Menu -->
             <div class="header__nav">
                 <ul class="header__topmenu">
-                    <li class="header__topmenu-link"><a href="#">О нас</a></li>
+                    <li class="header__topmenu-link"><a href="#" class="header__link-black">О нас</a></li>
                     <li class="header__topmenu-link link__show-more">
-                        <a href="#">Услуги <img src="img/expand_more.svg" alt="show more"></a>
+                        <a href="#" class="header__link-black">Услуги <img src="img/expand_more.svg" alt="show more"></a>
                         <ul class="header__downmenu">
                             <li><a href="#" class="header__downmenu-link">Услуга 1</a></li>
                             <li><a href="#" class="header__downmenu-link">Услуга 2</a></li>
                             <li><a href="#" class="header__downmenu-link">Услуга 3</a></li>
                         </ul>
                     </li> 
-                    <li class="header__topmenu-link"><a href="#">Вакансии</a></li>
-                    <li class="header__topmenu-link"><a href="#">Новости</a></li>
+                    <li class="header__topmenu-link"><a href="#" class="header__link-black">Вакансии</a></li>
+                    <li class="header__topmenu-link"><a href="#" class="header__link-black">Новости</a></li>
                     <li class="header__topmenu-link link__show-more">
-                        <a href="#">Соглашения <img src="img/expand_more.svg" alt="show more"></a>
+                        <a href="#" class="header__link-black">Соглашения <img src="img/expand_more.svg" alt="show more"></a>
                         <ul class="header__downmenu">
                             <li><a href="#" class="header__downmenu-link">Соглашениe 1</a></li>
                             <li><a href="#" class="header__downmenu-link">Соглашениe 2</a></li>
@@ -117,10 +119,100 @@
     <div class="margin-line"></div>
 
     <!-- Footer -->
-    
+    <footer>
+        <div class="container">    
+          <div class="mr-50 footer__textwrap">
+            <div class="logo">
+                <img src="img/Logo.svg" alt="TOXIN logo">
+            </div>
+            <p class="footer__logo-text">
+              Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            </p>
+          </div>
+      
+          <div class="mr-50">
+            <h2 class="footer__title">
+              навигация
+            </h2>
+            <ul class="footer__menu">
+              <li><a href="#" class="footer__menu-link">О нас</a></li>
+              <li><a href="#" class="footer__menu-link">Новости</a></li>
+              <li><a href="#" class="footer__menu-link">Служба поддержки</a></li>
+              <li><a href="#" class="footer__menu-link">Услуги</a></li>
+            </ul>
+          </div>
+      
+          <div class="mr-50">
+            <h2 class="footer__title">
+              о нас
+            </h2>
+            <ul class="footer__menu">
+              <li><a href="#" class="footer__menu-link">О сервисе</a></li>
+              <li><a href="#" class="footer__menu-link">Наша команда</a></li>
+              <li><a href="#" class="footer__menu-link">Вакансии</a></li>
+              <li><a href="#" class="footer__menu-link">Инвесторы</a></li>
+            </ul>
+          </div>
+      
+          <div class="mr-50">
+            <h2 class="footer__title">
+              Служба поддержки
+            </h2>
+            <ul class="footer__menu">
+              <li><a href="#" class="footer__menu-link">Соглашения</a></li>
+              <li><a href="#" class="footer__menu-link">Сообщества</a></li>
+              <li><a href="#" class="footer__menu-link">Связь с нами</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h2 class="footer__title">
+            Подписка</h2>
+            <p class="footer__textwrap">
+            Получайте специальные предложения и новости сервиса</p>
+            <form validate>
+                <div class="input__wrap mt-20">
+                <input type="email" placeholder="Email">
+                <button type="submit" class="button-arrow"><img src="img/arrow_purpure.svg" alt="arrow button"></button>
+                </div>
+            </form>
+          </div>
+      
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container copyright__container">
+            <div class="copyright__text">
+                Copyright © 2018 Toxin отель. Все права защищены.
+            </div>
+            <div>
+                <a href="#" class="copyrignt__icon"><img src="img/twitter.svg" alt="twitter" style="margin-right: 20px;" class="img_icon"></a>
+                <a href="#" class="copyrignt__icon"><img src="img/facebook.svg" alt="facebook" style="margin-right: 20px;" class="img_icon"></a>
+                <a href="#" class="copyrignt__icon"><img src="img/instagramm.svg" alt="instagramm" class="img_icon"></a>
+            </div>
+        </div>
+    </div>
+<!--
+    <div style="margin-top: 100px; border-top: 1px solid rgba(31, 32, 65, 0.25);">
+        <div style="display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 140px;">
+          <div style="font-size: 14px;
+          line-height: 17px;
+           color: rgba(31, 32, 65, 0.75);">Copyright © 2018 Toxin отель. Все права защищены.</div>
+          <div>
+            <img src="img/twitter.svg" alt="twitter" style="margin-right: 20px;" class="img_icon">
+            <img src="img/facebook.svg" alt="facebook" style="margin-right: 20px;" class="img_icon">
+            <img src="img/instagramm.svg" alt="instagramm" class="img_icon">
+          </div>
+        </div>
+      </div>
+      -->
 
 
-<script src="scripts/menu.js"></script>
+
 
 </body>
 </html>
