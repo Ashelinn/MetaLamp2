@@ -1,12 +1,19 @@
 const logic = () => {
 
-    let contextMenu = document.querySelectorAll('.link__show-more');
-
-    console.log('menu ',contextMenu);
-
-    contextMenu.forEach(elem => {
+    /* menu */
+    let menu = document.querySelectorAll('.header__topmenu-link');
+    menu.forEach(elem => {
         elem.addEventListener( "click" , () => {
-            elem.children[1].classList.toggle("active");
+            if (elem.classList.contains('link__show-more')) {
+                elem.children[1].classList.toggle("active");
+            }
+            else {
+                let downmenu = document.querySelectorAll('.header__downmenu');
+                downmenu.forEach(e => {
+                    e.classList.remove('active');
+                })
+            }
+            //console.log();
         });    
     });
 
@@ -19,6 +26,7 @@ const logic = () => {
             menu[0].classList.toggle("active");
             register[0].classList.toggle("active");
         });    
+
 }
 
 export default logic;
