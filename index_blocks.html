@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/uikit_blocks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!--<script src="dist/main.js" defer></script>-->
+    <title>UIkit blocks</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="form__container">
+            <h2 class="form__title">
+               Найдём номера под ваши пожелания
+            </h2>
+            <div class="flex-wrap">
+               <div class="mr20">
+                  <h3 style="font-size: 12px; margin: 21px 0px 6px;">ПРИБЫТИЕ</h3>
+                  <div class="date_wrap">
+                  <input type="text" value="ДД.ММ.ГГГГ">
+                  <img src="../img/arrow_input.svg" alt="arrow button">
+                  </div>
+               </div>
+               <div>
+                <h3 style="font-size: 12px; margin: 21px 0px 6px;">ВЫЕЗД</h3>
+                <div class="date_wrap">
+                <input type="text" value="ДД.ММ.ГГГГ">
+                <img src="../img/arrow_input.svg" alt="arrow button">
+                </div>
+             </div>
+            </div>
+            <h3 style="font-size: 12px; margin: 21px 0px 6px;">ГОСТИ</h3>
+                <div class="date_wrap-big">
+                <input type="text" value="Сколько гостей">
+                <img src="../img/arrow_input.svg" alt="arrow button">
+                </div>
+        
+            <button  class="button-arrow">
+                <p style="margin: 0; text-align: center; width: 100%;"><span>подобрать номер</span></p>
+                <img src="../img/arrow_right.svg">
+            </button>
+        </div>
+        
+        <div class="block-wrap">
+          <div style="display:flex; justify-content: space-between;">
+            <h2 class="block-title"><span style="font-size: 12px">№ </span>888 <span style="margin: 0; color: #BC9CFF; font-size: 12px; font-weight: 700; text-transform: uppercase;">люкс</span></h2>
+            <p style="margin: 0; color: rgba(31, 32, 65, 0.5); font-size: 14px; font-weight: 700;">9 990₽ в сутки</p>
+          </div>
+          
+          <div class="flex-wrap">
+             <div class="mr20">
+                <h3 style="font-size: 12px; margin: 21px 0px 6px;">ПРИБЫТИЕ</h3>
+                <div class="date_wrap">
+                <input type="text" value="19.08.2019">
+                <img src="../img/arrow_input.svg" alt="arrow button">
+                </div>
+             </div>
+             <div>
+              <h3 style="font-size: 12px; margin: 21px 0px 6px;">ВЫЕЗД</h3>
+              <div class="date_wrap">
+              <input type="text" value="23.08.2019">
+              <img src="../img/arrow_input.svg" alt="arrow button">
+              </div>
+           </div>
+          </div>
+          <h3 style="font-size: 12px; margin: 21px 0px 6px;">ГОСТИ</h3>
+              <div class="date_wrap-big">
+              <input type="text" value="3 гостя">
+              <img src="../img/arrow_input.svg" alt="arrow button">
+              </div>
+        
+              <div style="display: flex; justify-content: space-between; color: rgba(31, 32, 65, 0.75); font-size: 14px; margin-top: 20px;">
+                <p>9 990₽ х 4 суток</p>
+                <p>39 960₽</p>
+              </div>
+        
+              <div style="display: flex; justify-content: space-between; color: rgba(31, 32, 65, 0.75); font-size: 14px; margin-top: 10px;">
+                <p style="display: flex; align-items: center;"><span style="margin-right: 5px;">Сбор за услуги: скидка 2 179₽</span> <img src="../img/info.svg"></p>
+                <p>0₽</p>
+              </div>
+        
+              <div style="display: flex; justify-content: space-between; color: rgba(31, 32, 65, 0.75); font-size: 14px; margin-top: 10px;">
+                <p style="display: flex; align-items: center;"><span style="margin-right: 5px;">Сбор за дополнительные услуги</span> <img src="../img/info.svg"></p>
+                <p>300₽</p>
+              </div>
+        
+              <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+                <p style="font-size: 19px; color: #1F2041; font-weight: 700">Итого</p>
+                <div style="border-bottom: 1px dashed rgba(31, 32, 65, 0.25); width: 50%"></div>
+                <p style="font-size: 19px; color: #1F2041; font-weight: 700">38 081₽</p>
+              </div>
+        
+          <button  class="button-arrow">
+              <p style="margin: 0; text-align: center; width: 100%;"><span>забронировать</span></p>
+              <img src="../img/arrow_right.svg">
+          </button>
+        </div>
+        
+        <div class="block-wrap">
+          <h2 class="block-title" style="margin-bottom: 20px">Войти</h2>
+          <div class="date_wrap" style="width: 100%; margin-bottom: 10px;">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="date_wrap" style="width: 100%;">
+            
+            <!--надо задать инпуту такие стили -->
+            <input type="password" placeholder="Пароль">
+          </div>
+          <button  class="button-arrow" style="margin-bottom: 30px;">
+            <p style="margin: 0; text-align: center; width: 100%;"><span>войти</span></p>
+            <img src="../img/arrow_right.svg">
+        </button>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <p>Нет аккаунта на Toxin?</p>
+          <div class="nav__button-border">
+            <div class="nav__button-content">создать</div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+        
+        <!-- карточка Войти -->
+        <div style="display: flex;">
+          <div class="block-wrap">
+            <h2 class="block-title" style="margin-bottom: 20px">Регистрация акаунта</h2>
+            <div class="date_wrap" style="width: 100%; margin-bottom: 10px;">
+              <input type="text" placeholder="Имя">
+            </div>
+            <div class="date_wrap" style="width: 100%;">
+        
+              <!--надо задать инпуту такие стили-->
+              <input type="text" placeholder="Фамилия">
+            </div>
+            <div class="form_radio" style="margin-top: 10px;">
+             
+                <input name="male" type="radio" value="men" style="width: 20px; margin: 10px 0px; color: rgba(31, 32, 65, 0.5);" checked>
+                <label for="male" class="man">Мужчина</label>
+             
+             <input name="male" type="radio" value="women" style="width: 20px; margin: 10px 0px; color: rgba(31, 32, 65, 0.5);">
+             <label for="male" class="man">Женщина</label>
+             
+            </div>
+        
+              <div class="mr20">
+                 <h3 style="font-size: 12px; margin: 21px 0px 6px; text-transform: uppercase;">дата рождения</h3>
+                 <div class="date_wrap" style="width: 100%">
+                 <input type="text" value="ДД.ММ.ГГГГ">
+                 </div>
+              </div>
+        
+              <div class="mr20">
+                <h3 style="font-size: 12px; margin: 21px 0px 6px; text-transform: uppercase;">данные для входа в сервис</h3>
+                <div class="date_wrap" style="width: 100%; margin-bottom: 10px;">
+                <input type="email" value="Email">
+                </div>
+                <div class="date_wrap" style="width: 100%">
+                  <input type="password" value="Пароль">
+                  </div>
+             </div>
+        
+            <button  class="button-arrow" style="margin-bottom: 30px;">
+              <p style="margin: 0; text-align: center; width: 100%;"><span>войти</span></p>
+              <img src="../img/arrow_right.svg">
+          </button>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p>Нет аккаунта на Toxin?</p>
+            <div class="nav__button-border">
+              <div class="nav__button-content">создать</div>
+          </div>
+          </div>
+          </div>
+        
+          <div style="width: 270px; height: 257px; background-color: #FFF;">
+            <img src="../img/room840.jpg" alt="galery rooms">
+            <div style="display: flex; justify-content: space-between; padding: 20px 20px 10px 20px;">
+              <p style="font-size: 14px; font-weight: 700;">№ 840</p>
+              <p style="color: rgba(31, 32, 65, 0.5);"><b>9 900₽</b> в сутки</p>
+            </div>
+            <hr style="background: rgba(31, 32, 65, 0.1); margin: 0 20px;"></hr>
+            <div style="display: flex; justify-content: space-between; margin: 8px 20px 20px 20px;">
+              <div>
+                <img src="../img/star_full.svg" alt="star">
+                <img src="../img/star_full.svg" alt="star">
+                <img src="../img/star_full.svg" alt="star">
+                <img src="../img/star_full.svg" alt="star">
+                <img src="../img/star_border.svg" alt="star">
+              </div>
+              <p style="color: rgba(31, 32, 65, 0.5); font-size: 14px;"><b>65</b> Отзывов</p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- карточка Календарь -->
+        <div style="display: flex;">
+          <div class="block-wrap">
+            <div style="display: flex; justify-content: space-between;">
+              <img src="../img/arrow_back.svg" alt="back">
+              <h2 style="font-weight: 700;
+              font-size: 19px;
+              line-height: 23px;
+              color: #1F2041;"> Август 2019 </h2>
+              <img src="../img/arrow_forward.svg" alt="forward">
+            </div>
+            <table style="width: 100%;">
+              <thead style="color: #BC9CFF;">
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+                <th>Вс</th>
+              </thead>
+              <tbody>
+                <tr style="text-align: center; color: rgba(31, 32, 65, 0.5);">
+                  <td style="color: rgba(31, 32, 65, 0.25);">29</td>
+                  <td style="color: rgba(31, 32, 65, 0.25);">30</td>
+                  <td style="color: rgba(31, 32, 65, 0.25);">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+                <tr style="text-align: center; color: rgba(31, 32, 65, 0.5);">
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr style="text-align: center; color: rgba(31, 32, 65, 0.5);">
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                </tr>
+                <tr style="text-align: center; color: rgba(31, 32, 65, 0.5);">
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+                <tr style="text-align: center; color: rgba(31, 32, 65, 0.5);">
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td style="color: rgba(31, 32, 65, 0.25);">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</body>
+</html>
