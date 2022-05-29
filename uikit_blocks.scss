@@ -1,0 +1,79 @@
+/*-----------------------------------------------
+Constants
+-----------------------------------------------*/
+$DarkShade100: #1F2041;
+$DarkShade75: rgba(31, 32, 65, 0.75);
+$DarkShade50: rgba(31, 32, 65, 0.5);
+$DarkShade25: rgba(31, 32, 65, 0.25);
+$DarkShade10: rgba(31, 32, 65, 0.1);
+$DarkShade5: rgba(31, 32, 65, 0.05);
+$Purple: #BC9CFF;
+$Blue: #8BA4F9;
+$Green: #6FCF97;
+$White: #FFF;
+$radius: 22px;
+$small_radius: 4px;
+
+/*-----------------------------------------------
+Common styles
+-----------------------------------------------*/
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $DarkShade75;
+    background-color: $DarkShade5;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    margin: 11px 0px 11px 15px;
+    border: none;
+    outline: none;
+    color: $DarkShade75;
+}
+
+input::placeholder {
+    color: $DarkShade25;
+}
+
+.input__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    background-color: $White;
+    border: 1px solid $DarkShade25;
+    border-radius: $small_radius;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 150px auto;
+}
+
+/*-----------------------------------
+Blocks
+-----------------------------------*/
+.form__container {
+    width: 380px;
+    padding: 40px 30px 30px;
+    background-color: $White;
+}
+
+.form__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: $DarkShade100;
+}
