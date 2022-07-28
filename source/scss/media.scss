@@ -1,0 +1,109 @@
+@media (max-width: 1200px) {
+    $maxWidth: 860px;
+
+    .wrap {
+        width: $maxWidth;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrap {
+        width: 90%;
+    }
+
+    #burger {
+        display: block;
+        z-index: 98;
+    }
+
+    .header__nav, .header__login {
+        display: none;
+    }
+
+    .header__nav.active {
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .header__login.active {
+        display: flex;
+        padding-top: 30px;
+        max-width: 100%;
+        position: absolute;
+        top: 300px;
+        left: 60px;
+        z-index: 96;
+        background-color: $White;
+        border-top: 2px solid $Dark75;
+    }
+
+    .header__nav.active .header__topmenu {
+        flex-direction: column;
+        margin-top: 45px;
+        padding: 30px 60px 140px 60px;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FFF;
+        border-radius: $radius;
+    }
+
+    .header__nav.active .header__topmenu-link {
+        margin-bottom: 20px;
+    }
+
+    .header__nav a {
+        font-size: 20px;
+    }
+
+    .header__downmenu {
+        width: auto;
+    }
+
+    .header__nav.active .header__downmenu {
+        top: -20px;
+        left: -150px;
+        opacity: 0;
+    }
+
+    .header__nav.active .header__downmenu.active {
+        padding: 20px 70px 40px 70px;
+        left: 160px;
+        opacity: 1;
+    }
+
+    .header__nav.active .header__downmenu.active li {
+        padding-bottom: 20px;
+    }
+
+    .header__nav.active .header__login {
+        display: block;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 600px;
+        height: 70px;
+        margin: auto;
+    }
+
+    .header__logo {
+        flex-grow: 1;
+        margin-right: 20px;
+    }
+
+    .button__register {
+        padding: 24px 44px;
+        font-size: 18px;
+    }
+    
+    .button__entrance {
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 4px;
+    }
+}

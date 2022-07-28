@@ -1,0 +1,148 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: $White;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heaader__logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.header__topmenu {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__topmenu-link {
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__downmenu  {
+    display: flex;
+    flex-direction: column;
+    min-width: 20em;
+    padding: 8px 28px 28px 28px;
+    position: absolute;
+    top: -300px;
+    left: 0;
+    z-index: 100;
+    list-style-type: none;
+    background: linear-gradient($Purple, $Violet);
+    
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.header__downmenu.active {
+    top: 48px;
+    opacity: 1;
+}
+
+.header__downmenu.active li {
+    margin-top: 20px;
+}
+
+.header__downmenu-link {
+    font-weight: 700;
+    color: $White;
+    transition: color 0.9s ease;
+}
+
+.header__downmenu-link:hover, .header__downmenu-link:focus-within {
+    color: $Dark25;
+}
+
+.header__login {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+}
+
+#burger {
+    display: none;
+    height: 30px;
+    cursor: pointer;
+}
+  
+#burger img {
+    height: 100%;
+}
+
+.link-black {
+    color: $Dark50;
+}
+
+.link-black:hover, .link-black:focus-within {
+    text-shadow: 0 0 1.2px $Dark75, 0 0 1.2px $Dark75;
+}
+
+.link__img {
+    margin-left: 5px;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+}
+
+/*Error*/
+
+.button__wrap {
+    margin-right: 20px;
+    background: linear-gradient(180deg, $Purple 0%, $Violet 100%);
+    border-radius: $bigRadius;
+    transition: all 0.6s ease;
+}
+
+.button__wrap:hover {
+    background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
+}
+
+.button__entrance {
+    margin: 2px;
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $Purple;
+    border: none;
+    outline: none;
+    border-radius: $bigRadius;
+    background: $White;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button__entrance:hover {
+    opacity: 1;
+}
+
+.button__register {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $White;
+    border: none;
+    outline: none;
+    border-radius: $bigRadius;
+    background: linear-gradient(180deg, $Purple 0%, $Violet 100%);
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+
+.button__register:hover {
+    background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
+}
