@@ -1,0 +1,49 @@
+header
+    .wrap.header__wrap
+        //Logo
+        .heaader__logo 
+            img(src="./source/img/Logo.svg", alt="TOXIN logo")
+
+        //Menu
+        .header__nav 
+            ul.header__topmenu 
+                li.header__topmenu-link 
+                    a(href="#").link-black О нас
+                li(about="services").header__topmenu-link.header__showmore 
+                    a(href="#").link-black Услуги
+                        img(src="./source/img/expand_more.svg", alt="show more").link__img
+                    ul.header__downmenu 
+                        li 
+                            a(hre="#").header__downmenu-link организация экскурсий
+                        li 
+                            a(hre="#").header__downmenu-link аренда конференц-зала или других помещений
+                        li 
+                            a(hre="#").header__downmenu-link прокат автомобилей
+                        li 
+                            a(hre="#").header__downmenu-link ремонт одежды и обуви, стирка и химчистка
+                        li 
+                            a(hre="#").header__downmenu-link пользование бильярдной, спортивным залом и площадками
+                li.header__topmenu-link 
+                    a(href="#").link-black Вакансии
+                li.header__topmenu-link 
+                    a(href="#").link-black Новости
+                li(about="agreements").header__topmenu-link.header__showmore 
+                    a(href="#").link-black Соглашения
+                        img(src="./source/img/expand_more.svg", alt="show more").link__img
+                    ul.header__downmenu 
+                        li 
+                            a(hre="#").header__downmenu-link Соглашение по размещению и обслуживанию туристов в гостинице
+                        li 
+                            a(hre="#").header__downmenu-link Соглашение субагентского договора на реализацию туристского продукта, сформированного туроператором
+                        li 
+                            a(hre="#").header__downmenu-link Соглашение об оказании услуг по размещению представителя Заказчика в гостинице
+
+        //Login & password
+        .header__login 
+            .button__wrap 
+                button.button__entrance Войти
+            button.button__register Зарегестрироваться
+
+        //Burger menu
+        #burger 
+            img(src="./source/img/burger.png", alt="burger menu")
