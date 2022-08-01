@@ -6,10 +6,9 @@ menu.forEach(elem => {
             elem.children[1].classList.toggle("active");
             let activeLink = document.querySelectorAll('.header__showmore .active');
                 activeLink.forEach(el => {
-                    console.log('el- ',el);
-                    console.log('elem- ',elem);
-                    if (el.getAttribute('about') == elem.getAttribute('about')) 
-                        console.log(el);
+                    if (el.getAttribute('about') !== elem.children[1].getAttribute('about')) {
+                        el.classList.remove('active');
+                    } 
                 })
         }
         else {
