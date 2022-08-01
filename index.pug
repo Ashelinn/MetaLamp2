@@ -7,6 +7,46 @@ html(lang="ru")
         link(type="image/png", sizes="32x32", rel="icon", href="./source/img/favicon.png")
         link(href='css/style.css', rel="stylesheet")
         script(src='./source/scripts/main.js', defer)
-        title Toxin
+        title Toxin Ui-Kit
     body 
+        //gray logo
+        .gray-logo__wrap 
+            img(src="./source/img/gray_logo.svg", alt="gray logo Toxin")
+
+        //header
         include ./modules/header.pug
+
+        // header with user name
+        .user__wrap
+            .wrap.header__wrap
+                //Logo
+                .heaader__logo.logo__grow 
+                    img(src="./source/img/Logo.svg", alt="TOXIN logo")
+
+                //Menu
+                .header__nav 
+                    ul.header__topmenu 
+                        li.header__topmenu-link 
+                            a(href="#").link-black О нас
+                        li.header__topmenu-link.header__showmore 
+                            a(href="#").link-black Услуги
+                                img(src="./source/img/expand_more.svg", alt="show more").link__img
+                        li.header__topmenu-link 
+                            a(href="#").link-black Вакансии
+                        li.header__topmenu-link 
+                            a(href="#").link-black Новости
+                        li.header__topmenu-link.header__showmore 
+                            a(href="#").link-black Соглашения
+                                img(src="./source/img/expand_more.svg", alt="show more").link__img
+
+                //user name
+                .header__login 
+                    .header__login-line 
+                    .header__login-name Юлий Цезарь    
+
+                //Burger menu
+                #burger 
+                    img(src="./source/img/burger.png", alt="burger menu")
+
+        // footer
+        include ./modules/footer.pug
