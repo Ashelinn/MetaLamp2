@@ -1,0 +1,53 @@
+footer 
+    .wrap.footer__wrap
+        // logo
+        .footer__logo 
+            img(src="./source/img/Logo.svg", alt="Toxin logo")
+            p.footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        
+        //navigation
+        .footer__navigation 
+            h2.footer__title навигация
+            ul.footer__menu 
+                li 
+                    a(href="#").link-black О нас
+                li 
+                    a(href="#").link-black Новости
+                li 
+                    a(href="#").link-black Служба поддержки
+                li 
+                    a(href="#").link-black Услуги
+
+        .footer__navigation 
+            h2.footer__title о нас
+            ul.footer__menu 
+                li 
+                    a(href="#").link-black О сервисе
+                li 
+                    a(href="#").link-black Наша команда
+                li 
+                    a(href="#").link-black Вакансии
+                li 
+                    a(href="#").link-black Инвесторы
+
+        .footer__navigation 
+            h2.footer__title Служба поддержки
+            ul.footer__menu 
+                li 
+                    a(href="#").link-black Соглашения
+                li 
+                    a(href="#").link-black Сообщества
+                li 
+                    a(href="#").link-black Связь с нами
+                
+        //footer subscribe
+        .footer__subscribe 
+            h2.footer__title Подписка
+            p.footer__text Получайте специальные предложения и новости сервиса
+            form(validate)
+                .input__wrap
+                    input(type="email", placeholder="Email")
+                    button(type="submit").button-arrow
+                        img(src="./source/img/arrow_purpure.svg", alt="subscribe button")
+
+        
