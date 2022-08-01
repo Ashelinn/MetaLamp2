@@ -1,0 +1,47 @@
+footer {
+    background-color: $White;
+}
+
+.footer__wrap {
+    display: flex;
+    margin-top: 40px;
+    padding: 100px 0;
+}
+
+.footer__logo, .footer__subscribe {
+    flex-basis: 260px;
+    flex-grow: 1;
+    margin-right: 40px;
+}
+
+.footer__subscribe {
+    margin-right: 0;
+}
+
+.footer__text {
+    color: $Dark75;
+}
+
+.footer__navigation {
+    flex-basis: content;
+    flex-grow: 0;
+    margin-right: 55px;
+}
+
+.footer__title {
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+}
+
+.footer__menu {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__menu li {
+    margin-bottom: 20px;
+}
