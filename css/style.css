@@ -1,6 +1,9 @@
-body {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -375,6 +378,77 @@ footer {
   margin-bottom: 20px;
 }
 
+.copyright {
+  border-top: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.copyright__wrap, .copyright__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright__wrap {
+  padding: 23px 0;
+}
+
+.copyright__text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.copyright__link {
+  margin-right: 20px;
+}
+
+.copyright__link:last-of-type {
+  margin-right: 0;
+}
+
+.copyright__img {
+  opacity: 1;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+}
+
+.copyright__img:hover {
+  opacity: 0.5;
+}
+
+.copyright__logo {
+  display: none;
+}
+
+.copyright__small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 768px;
+  height: 367px;
+  padding: 120px 0;
+  margin: 40px auto 140px;
+  background-color: #FFF;
+}
+
+.copyright__small .copyright__text {
+  margin: 20px 0 25px;
+}
+
 @media (max-width: 1200px) {
   .wrap {
     width: 860px;
@@ -494,6 +568,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 60px 0;
   }
   .footer__navigation {
     margin-right: 0px;
@@ -518,5 +593,19 @@ footer {
   }
   .input__wrap {
     width: 60%;
+  }
+  .copyright__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 120px 0;
+  }
+  .copyright__icons {
+    margin-top: 25px;
+  }
+  .copyright__logo {
+    display: block;
+    margin-bottom: 20px;
   }
 }
