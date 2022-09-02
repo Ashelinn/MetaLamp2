@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(type="image/png", sizes="32x32", rel="icon", href="./source/img/favicon.png")
+        link(href='css/style.css', rel="stylesheet")
+        script(src='./source/scripts/main.js', defer)
+        title Form elements
+    body 
+        //gray logo
+        .gray-logo__wrap 
+            img(src="./source/img/gray_logo.svg", alt="gray logo Toxin")
+            a(href="index.html", target="_blank").link-black Headers & footers
+
+        .wrap.three-columns 
+            // column with inputs
+            .column 
+                .input-title__wrap
+                    p.input__title Text Field
+                    p.input__text Default
+                form(validation)
+                    input(type="email", placeholder="Email").input__class
+                    
+                        
+                .input-title__wrap
+                    p.input__title Text Field
+                    p.input__text Hover / Focus
+                form(validation)
+                        input(type="email", value="This is pretty awesome").input__class.input-dark
+
+                //choise guests block
+                #guest__dropdown 
+                    .input-title__wrap
+                        p.input__title Dropdown
+                    .input__wrap 
+                        p#guests Сколько гостей
+                        button(type="submit")#guests__button.button-arrow
+                            img(src="./source/img/arrow_down.svg", alt="choise guests")
+                    //adults
+                    .guest__choise 
+                        .guest__line 
+                            p.guest__text взрослые
+                            img(src="./source/img/minus.svg", alt="adults reduce")#adults-minus.guest__img-btn
+                            p#adults.guests__choise 2
+                            img(src="./source/img/plus.svg", alt="adults add")#adults-plus.guest__img-btn
+                        //children
+                        .guest__line 
+                            p.guest__text дети
+                            img(src="./source/img/minus.svg", alt="children reduce")#children_minus.guest__img-btn
+                            p#children.guests__choise 1
+                            img(src="./source/img/plus.svg", alt="children add")#children_plus.guest__img-btn
+                        //baby
+                        .guest__line 
+                            p.guest__text младенцы
+                            img(src="./source/img/minus.svg", alt="baby reduce")#baby_minus.guest__img-btn
+                            p#baby.guests__choise 1
+                            img(src="./source/img/plus.svg", alt="baby add")#baby_plus.guest__img-btn
+                        //confirm selection
+                        .guest__confirm 
+                            p.guest__clear очистить
+                            p.guest__ok применить
+
+            //chekbox
+            .column 
+                p Checkbox
+
+            //buttons
+            .column 
+                p Buttons
