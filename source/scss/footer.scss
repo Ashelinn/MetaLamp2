@@ -45,3 +45,61 @@ footer {
 .footer__menu li {
     margin-bottom: 20px;
 }
+
+.copyright {
+    border-top: 1px solid $Dark1;
+}
+
+.copyright__wrap, .copyright__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright__wrap {
+    padding: 23px 0;
+}
+
+.copyright__text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: $Dark75;
+}
+
+.copyright__link {
+    margin-right: 20px;
+}
+
+.copyright__link:last-of-type {
+    margin-right: 0;
+}
+
+.copyright__img {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.copyright__img:hover {
+    opacity: 0.5;
+}
+
+.copyright__logo {
+    display: none;
+}
+
+//footer small style
+.copyright__small {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 768px;
+    height: 367px;
+    padding: 120px 0;
+    margin: 40px auto 140px;
+    background-color: $White;
+}
+
+.copyright__small .copyright__text {
+    margin: 20px 0 25px;
+}

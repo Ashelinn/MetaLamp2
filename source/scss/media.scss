@@ -115,6 +115,7 @@
 
     .footer__wrap {
         flex-direction: column;
+        padding: 60px 0;
     }
 
     .footer__navigation {
@@ -139,7 +140,17 @@
         line-height: 24px;
     }
     
-    .input__wrap {
-        width: 60%;
+    .copyright__wrap {
+        flex-direction: column;
+        padding: 120px 0;
+    }
+
+    .copyright__icons {
+        margin-top: 25px;
+    }
+
+    .copyright__logo {
+        display: block;
+        margin-bottom: 20px;
     }
 }

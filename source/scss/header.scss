@@ -80,14 +80,6 @@ header {
     height: 100%;
 }
 
-.link-black {
-    color: $Dark50;
-}
-
-.link-black:hover, .link-black:focus-within {
-    text-shadow: 0 0 1.2px $Dark75, 0 0 1.2px $Dark75;
-}
-
 .link__img {
     margin-left: 5px;
 }

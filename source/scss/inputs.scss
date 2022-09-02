@@ -1,0 +1,162 @@
+//Forms element page styles
+
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-title__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
+.input__class {
+margin: 5px 0;
+padding: 13px 15px;
+}
+
+.input__wrap,
+.input__class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 320px;
+    border: 1px solid $Dark25;
+    border-radius: $radius;
+    background-color: $White;
+    transition: all 0.6s ease;
+}
+
+.input__wrap:hover, 
+.input__wrap:focus, 
+.input__wrap.active,
+.input__class:hover,
+.input__class:focus {
+    border: 1px solid $Dark50;
+}
+
+input {
+    margin: 11px 0px 11px 15px;
+    border: none;
+    outline: none;
+    color: $Dark75;
+}
+
+input::placeholder {
+    color: $Dark25;
+}
+
+.button-arrow {
+    outline: none;
+    border: none;
+    background-color: $White;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.button-arrow:hover {
+    opacity: 0.5;
+}
+
+.input__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+}
+
+.input__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark50;
+}
+
+.input-dark {
+    color: $Dark75;
+}
+
+//Guests choise
+#guests {
+    width: 320px;
+    margin: 13px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $Dark75;
+}
+
+#guests__button {
+    margin-right: 15px;
+}
+
+.guest__choise {
+    display: none;
+    margin-top: -4px;
+    padding: 7px 15px 13px 15px;
+    background:$White;
+    border: 1px solid $Dark50;
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    box-shadow: 0px 10px 20px $Dark05;
+    transition: display 0.5s ease;
+}
+  
+.guest__choise.active {
+    display: block;
+}
+  
+.guest__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.guest__text  {
+    flex-grow: 2;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+}
+
+.guest__img-btn {
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.guests__choise {
+    flex-grow: 0;
+    margin: 0px 12px;
+    text-align: center;
+}
+
+.guest__confirm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.guest__clear,
+.guest__ok {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Purple;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.guest__clear:hover,
+.guest__ok:hover {
+    opacity: 0.5;
+} 
