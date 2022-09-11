@@ -6,7 +6,7 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(type="image/png", sizes="32x32", rel="icon", href="./source/img/favicon.png")
         link(href='css/style.css', rel="stylesheet")
-        script(src='./source/scripts/main.js', defer)
+        script(src='./source/scripts/forms.js', defer)
         title Form elements
     body 
         //gray logo
@@ -49,13 +49,13 @@ html(lang="ru")
                         .guest__line 
                             p.guest__text дети
                             img(src="./source/img/minus.svg", alt="children reduce")#children_minus.guest__img-btn
-                            p#children.guests__choise 1
+                            p#children.guests__choise 0
                             img(src="./source/img/plus.svg", alt="children add")#children_plus.guest__img-btn
                         //baby
                         .guest__line 
                             p.guest__text младенцы
                             img(src="./source/img/minus.svg", alt="baby reduce")#baby_minus.guest__img-btn
-                            p#baby.guests__choise 1
+                            p#baby.guests__choise 0
                             img(src="./source/img/plus.svg", alt="baby add")#baby_plus.guest__img-btn
                         //confirm selection
                         .guest__confirm 
