@@ -10,6 +10,7 @@ $Violet: #8BA4F9;
 $Violet50: rgba(139, 164, 249, 0.5);
 $Green: #6FCF97;
 $White: #FFF;
+$Red: #ff634769;
 
 $text-size: 14px;
 
@@ -120,6 +121,12 @@ p {
 //margin & padding
 .mrtop-16 {
     margin-top: 16px;
+}
+
+//colored
+.warning {
+    background-color: $Red;
+    padding-left: 10px;
 }
 
 @import 'header.scss';
