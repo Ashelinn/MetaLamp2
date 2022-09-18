@@ -114,6 +114,7 @@ p {
     color: $Dark50; 
 }
 
+//grow & shrink
 .logo__grow {
     flex-grow: 2;
 }
@@ -123,8 +124,13 @@ p {
     margin-top: 16px;
 }
 
+.mrrh-20 {
+    margin-right: 20px;
+}
+
 //colored
 .warning {
+    color: $Red;
     background-color: $Red;
     padding-left: 10px;
 }
