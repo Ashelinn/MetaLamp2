@@ -119,3 +119,35 @@ gclear.addEventListener('click', () => {
     gChoise.classList.toggle('active');
 })
 
+/*----------------------------------------------------------------
+    date field
+-----------------------------------------------------------------*/
+let reg = /^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$/;
+let regData = /^(0[1-9]|[12][0-9]|3[01])/;
+let regMounth = /^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])/;
+let inputDate = document.querySelector('#user-date');
+
+inputDate.addEventListener('input', ()=> {
+    let str = document.querySelector('#user-date');
+    if(str.value.length === 2) {
+        if(regData.test(str.value)) {
+            str.value += '.';
+            str.classList.remove('warning');
+        }
+        else {
+            str.classList.add('warning');
+        }
+    }
+
+    if(str.value.length === 5) {
+        if(regMounth.test(str.value)) {
+            str.value += '.';
+            str.classList.remove('warning');
+        }
+        else {
+            str.classList.add('warning');
+        }
+    }
+
+    console.log(reg.test(str.value));
+});
