@@ -8,7 +8,8 @@ html(lang="ru")
         link(href='css/style.css', rel="stylesheet")
         script(src='./source/scripts/forms.js', defer)
         title Form elements
-    body 
+    
+    body.bgcolor-white 
         //gray logo and links
         .gray-logo__wrap 
             img(src="./source/img/gray_logo.svg", alt="gray logo Toxin")
@@ -21,14 +22,14 @@ html(lang="ru")
                 .input-title__wrap
                     p.input__title Text Field
                     p.input__text Default
-                form(validation)
+                form(validate)
                     input(type="email", placeholder="Email").input__class
                     
                 //================== Text Field ========================        
                 .input-title__wrap
                     p.input__title Text Field
                     p.input__text Hover / Focus
-                form(validation)
+                form(validate)
                         input(type="email", value="This is pretty awesome").input__class.input-dark
 
                 //================== Choise guests block ========================
@@ -66,15 +67,15 @@ html(lang="ru")
                 //================== Masked text field ========================
                 .input-title__wrap
                     p.input__title masked text field
-                form(validation)
+                form(validate)
                         input(type="text", placeholder ="ДД.ММ.ГГГГ",maxlength="10")#user-date.input__class
 
                 //================== Masked text field ========================
-                .two-input__wrap
+                .two-input__wrap.mrtop-20
                     div.mrrh-20
                         .input-title__wrap
                             p.input__title date Dropdown
-                        form(validation)
+                        form(validate)
                             .input__wrap-150
                                 p.date-gray ДД.ММ.ГГГГ
                                 button(type="submit").button-arrow
@@ -83,25 +84,112 @@ html(lang="ru")
                     div
                         .input-title__wrap
                             p.input__title date Dropdown
-                        form(validation)
+                        form(validate)
                             .input__wrap-150
                                 p.date-gray 19.08.2019
                                 button(type="submit").button-arrow
                                     img(src="./source/img/arrow_down.svg", alt="choise date")       
 
                 //============ filter date dropdown ======
-                .input-title__wrap
+                .input-title__wrap.mrtop-20
                     p.input__title filter date dropdown
-                form(validation)
+                form(validate)
                     .input__wrap-266
                         p.date-gray 19 авг - 23 авг
                         button(type="submit").button-arrow
                             img(src="./source/img/arrow_down.svg", alt="choise date")
 
+                //============ subscription text field ======
+                .input-title__wrap.mrtop-20
+                    p.input__title subscription text field
+                form(validate)
+                    .input__wrap-266
+                        input(type="email", placeholder="Email")
+                        button(type="submit").button-arrow
+                            img(src="./source/img/arrow_purpure.svg", alt="subscribe button")
+
 
             //chekbox
-            .column 
-                p Checkbox
+            .column.side 
+                //================== Checkbox Buttons ========================
+                .chekbox-title__wrap
+                    p.input__title Checkbox Buttons
+                form(validate)
+                    label.check
+                        input(type="checkbox").check__input
+                        span.check__box 
+                        p Можно курить
+                    label.check
+                        input(type="checkbox",checked).check__input
+                        span.check__box 
+                        p Можно с питомцами
+                    label.check
+                        input(type="checkbox",checked).check__input 
+                        span.check__box
+                        p Можно пригласить гостей (до 10 человек)
+
+                //================== Radio Buttons ========================
+                .chekbox-title__wrap
+                    p.input__title.mrtop-20 Radio Buttons
+                form(validate)
+                    div
+                        label.radio 
+                            input(type="radio", name="mal", checked).radio__input 
+                            span.radio__box 
+                            p.inline-text.color-black-75 Мужчина
+                        label.radio.pdleft-20
+                            input(type="radio", name="mal", disabled).radio__input
+                            span.radio__box 
+                            p.inline-text Женщина
+
+                //================== Toggle ========================
+                .chekbox-title__wrap
+                    p.input__title.mrtop-20 Toggle
+                form(validate)
+                    .switch__wrap
+                        label.switch
+                            input(type="checkbox", checked).check__input 
+                            span.switch__box
+                            p.inline-text Получать спецпредложения
+                        label.switch
+                            input(type="checkbox").check__input
+                            span.switch__box 
+                            p.inline-text Получать спецпредложения
+
+                //================== Like buttons ========================
+                .chekbox-title__wrap
+                    p.input__title.mrtop-20 like button
+                .flex-content
+                    .like__box
+                        .like__heart
+                        p 2
+
+                    .like__box.active
+                        .like__heart.active
+                        p#like.active 12
+
+                //================== Stars ========================
+                .chekbox-title__wrap
+                    p.input__title.mrtop-20 rate button
+                .flex-content
+                    div 
+                        fieldset.raiting 
+                            .raiting__group
+                                input(type="radio", name="raiting", value="1",aria-label="ужасно").raiting__star.raiting__star-one
+                                input(type="radio", name="raiting", value="2",aria-label="плохо").raiting__star.raiting__star-two
+                                input(type="radio", name="raiting", value="3",aria-label="нормально").raiting__star.raiting__star-three
+                                input(type="radio", name="raiting", value="4",aria-label="хорошо", checked).raiting__star.raiting__star-four
+                                input(type="radio", name="raiting", value="5",aria-label="отлично").raiting__star.raiting__star-five
+
+                    div.pdleft-20 
+                        fieldset.raiting 
+                            .raiting__group
+                                input(type="radio", name="raiting2", value="1",aria-label="ужасно").raiting__star.raiting__star-one
+                                input(type="radio", name="raiting2", value="2",aria-label="плохо").raiting__star.raiting__star-two
+                                input(type="radio", name="raiting2", value="3",aria-label="нормально").raiting__star.raiting__star-three
+                                input(type="radio", name="raiting2", value="4",aria-label="хорошо").raiting__star.raiting__star-four
+                                input(type="radio", name="raiting2", value="5",aria-label="отлично", checked).raiting__star.raiting__star-five
+                        
 
             //buttons
             .column 
