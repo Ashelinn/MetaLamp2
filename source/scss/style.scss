@@ -124,8 +124,25 @@ p {
     margin-top: 16px;
 }
 
+.mrtop-20 {
+    margin-top: 20px;
+}
+
 .mrrh-20 {
     margin-right: 20px;
+}
+
+.mrleft-40 {
+    margin-left: 40px;
+}
+
+.pdleft-20 {
+    padding-left: 20px;
+}
+
+.side {
+    margin-left: 126px;
+    margin-right: 126px;
 }
 
 //colored
@@ -135,6 +152,25 @@ p {
     padding-left: 10px;
 }
 
+.bgcolor-white {
+    background-color: $White;
+}
+
+.color-black-75 {
+    color: $Dark75;
+}
+
+
+//display
+.inline-text {
+    display: inline;
+}
+
+.flex-content {
+    display: flex;
+}
+
+//imports
 @import 'header.scss';
 @import 'footer.scss';
 @import 'inputs.scss';
