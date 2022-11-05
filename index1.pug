@@ -193,4 +193,18 @@ html(lang="ru")
 
             //buttons
             .column 
-                p Buttons
+                .buttons-title__wrap
+                    p.input__title buttons 
+                .buttons__wrap-two
+                    button.button__full click me
+                    button.button__full.press click me
+                .buttons__wrap-two
+                    .button__wrap 
+                        button.button__empty click me
+                    .button__wrap
+                        button.button__empty.press click me
+                .buttons__wrap-two
+                    a(href="#").button__link click me
+                    a(href="#").button__link.press click me
+
+                    
