@@ -151,3 +151,27 @@ inputDate.addEventListener('input', ()=> {
 
     console.log(reg.test(str.value));
 });
+
+/*----------------------------------------------------------------
+like buttons
+-----------------------------------------------------------------*/
+let likeValues = document.querySelectorAll('.like__box');
+
+for(let i=0; i<likeValues.length; i++) {
+    likeValues[i].addEventListener('click', ()=> {
+        if(likeValues[i].classList.contains('active')) {
+           let val = likeValues[i].lastChild.textContent;
+           let num = Number(val);
+           num -= 1;
+           likeValues[i].lastChild.textContent = String(num);
+        }
+        else {
+            let val = likeValues[i].lastChild.textContent;
+           let num = Number(val);
+           num += 1;
+           likeValues[i].lastChild.textContent = String(num);
+        }
+        likeValues[i].firstChild.classList.toggle('active');
+        likeValues[i].classList.toggle('active');
+    })
+}
