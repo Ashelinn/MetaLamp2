@@ -118,8 +118,7 @@ header {
 }
 
 .button__entrance:hover,
-.button__empty:hover,
-.button__empty .press {
+.button__empty:hover {
     opacity: 1;
 }
 
@@ -140,11 +139,6 @@ header {
 
 
 .button__register:hover,
-.button__full:hover,
-.button__full .press {
+.button__full:hover {
     background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
-}
-
-.button__full .press {
-    margin-left: 20px;
 }

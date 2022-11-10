@@ -9,6 +9,7 @@ $Purple50: rgba(188, 156, 255, 0.5);
 $Violet: #8BA4F9;
 $Violet50: rgba(139, 164, 249, 0.5);
 $Green: #6FCF97;
+$DarkGreen: #66D2EA;
 $White: #FFF;
 $Red: #ff634769;
 
@@ -39,7 +40,9 @@ body {
     width: $maxWidth;
 }
 
-// link style
+/* ==========================================
+ link style
+=========================================== */
 a {
     display: block;
     text-decoration: none;
@@ -56,7 +59,9 @@ a {
     text-shadow: 0 0 1.2px $Dark75, 0 0 1.2px $Dark75;
 }
   
-// title
+/* ==========================================
+ Tutle style
+=========================================== */
 h1, 
 h2, 
 h3 {
@@ -114,18 +119,27 @@ p {
     color: $Dark50; 
 }
 
-//grow & shrink
+/* ==========================================
+ grow & shrink
+=========================================== */
 .logo__grow {
     flex-grow: 2;
 }
 
-//margin & padding
+/* ==========================================
+ margin & padding
+=========================================== */
+
 .mrtop-16 {
     margin-top: 16px;
 }
 
 .mrtop-20 {
     margin-top: 20px;
+}
+
+.mrbottom-16 {
+    margin-bottom: 16px;
 }
 
 .mrrh-20 {
@@ -145,7 +159,9 @@ p {
     margin-right: 126px;
 }
 
-//colored
+/* ==========================================
+ colored
+=========================================== */
 .warning {
     color: $Red;
     background-color: $Red;
@@ -160,8 +176,9 @@ p {
     color: $Dark75;
 }
 
-
-//display
+/* ==========================================
+ display
+=========================================== */
 .inline-text {
     display: inline;
 }
@@ -170,7 +187,9 @@ p {
     display: flex;
 }
 
-//imports
+/* ==========================================
+ imports
+=========================================== */
 @import 'header.scss';
 @import 'footer.scss';
 @import 'inputs.scss';

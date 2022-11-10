@@ -1,5 +1,6 @@
-//Forms element page styles
-
+/* ==========================================
+ Forms element page styles
+=========================================== */
 .three-columns {
     display: flex;
     justify-content: space-between;
@@ -102,7 +103,9 @@ input::placeholder {
     color: $Dark75;
 }
 
-//Guests choise
+/*===========================================
+Guests choise
+===========================================*/
 #guests {
     width: 320px;
     margin: 13px 15px;
@@ -176,8 +179,7 @@ input::placeholder {
 
 .guest__clear:hover,
 .guest__ok:hover,
-.button__link:hover,
-.button__link .press {
+.button__link:hover {
     color: $Dark50;
 } 
 
@@ -193,7 +195,9 @@ input::placeholder {
     display: flex;
 }
 
-//Checkbox Buttons
+/*===========================================
+Checkbox Buttons
+===========================================*/
 .check__input {
     appearance: none;
     -webkit-appearance: none;
@@ -241,7 +245,9 @@ input::placeholder {
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.46439 2.29245L5.70703 6.53509L4.29282 7.9493L0.0501771 3.70666L1.46439 2.29245Z' fill='url(%23paint0_linear_18381_239)'/%3E%3Cpath d='M8.53546 0.878232L9.94967 2.29245L4.29282 7.9493L2.8786 6.53509L8.53546 0.878232Z' fill='url(%23paint1_linear_18381_239)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_18381_239' x1='7.82835' y1='0.171125' x2='2.1715' y2='5.82798' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='rgba(31,32,65,0.25)'/%3E%3Cstop offset='1' stop-color='rgba(31,32,65,0.25)'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_18381_239' x1='7.82835' y1='0.171125' x2='2.1715' y2='5.82798' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='rgba(31,32,65,0.25)'/%3E%3Cstop offset='1' stop-color='rgba(31,32,65,0.25)'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 
-//Radio buttons
+/*===========================================
+Radio buttons
+===========================================*/
 .radio__input {
     appearance: none;
     -webkit-appearance: none;
@@ -275,7 +281,9 @@ input::placeholder {
     font-size: 14px;
 }
 
-//Toggle
+/*===========================================
+Toggle
+===========================================*/
 .switch {
     padding-left: 50px;
     margin-bottom: 14px;
@@ -312,7 +320,9 @@ input::placeholder {
     transition: all 0.3s ease;
 }
 
-//Like buttons
+/*===========================================
+Like buttons
+===========================================*/
 .like__box {
     display: flex;
     justify-content: space-around;
@@ -346,7 +356,9 @@ input::placeholder {
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.93026 7.88672L4.3248 7.33984C3.63469 6.71484 3.13339 6.2526 2.82089 5.95312C2.50839 5.65365 2.15683 5.28255 1.7662 4.83984C1.3886 4.39714 1.12818 4 0.984952 3.64844C0.841723 3.28385 0.770108 2.91276 0.770108 2.53516C0.770108 1.89714 0.984952 1.35677 1.41464 0.914062C1.85735 0.471354 2.40422 0.25 3.05526 0.25C3.81047 0.25 4.43547 0.542969 4.93026 1.12891C5.42506 0.542969 6.05006 0.25 6.80526 0.25C7.45631 0.25 7.99667 0.471354 8.42636 0.914062C8.86907 1.35677 9.09042 1.89714 9.09042 2.53516C9.09042 3.04297 8.92115 3.57031 8.58261 4.11719C8.24407 4.66406 7.87297 5.13932 7.46933 5.54297C7.0787 5.94661 6.43417 6.55208 5.53573 7.35938L4.93026 7.88672Z' fill='url(%23paint0_linear_18447_118)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_18447_118' x1='4.93026' y1='-6' x2='4.93026' y2='14' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
 }
 
-//raiting stars
+/*===========================================
+raiting stars
+===========================================*/
 .raiting {
     margin: 0;
     padding: 0;
@@ -411,10 +423,133 @@ input::placeholder {
     background-size: 24px;
 }
 
+/*===========================================
+Range styles
+===========================================*/
+.range__container {
+    margin-top: 20px;
+}
+
+.range__container:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.range__container .ui-slider {
+    position: relative;
+    width: 266px;
+    height: 6px;
+    background: $White;
+    border-radius:3px;
+    border: 1px solid $Dark25;
+}
+
+.range__container .ui-slider .ui-slider-handle {
+    position: absolute;
+    margin-left: -10px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid $White;
+    outline: none;
+    top: -4px;
+    background: linear-gradient(180deg, $Green 0%, $DarkGreen 100%);
+    z-index: 2;
+    transition: transform 0.2s, border 0.4s;
+}
+
+.range__container .ui-slider .ui-slider-handle:hover,
+.range__container .ui-slider .ui-slider-handle:focus {
+    transform: scale(1.2);
+    border-color: $White;
+}
+
+.range__container .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: 6px;
+    border: 0;
+    background: linear-gradient(180deg, $Green 0%, $DarkGreen 100%);
+    border-radius: 3px;
+}
+
+.ui-state-hover, 
+.ui-state-focus,
+.ui-slider-handle .ui-state-hover,
+.ui-slider-handle .ui-state-focus {
+    border-color: $White;
+}
+
 /*----------------------------------
 buttons
 -----------------------------------*/
 .buttons__wrap-two {
     display: flex;
     margin-bottom: 30px;
+}
+
+.button__full-press {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $White;
+    border: none;
+    outline: none;
+    border-radius: $bigRadius;
+    background: linear-gradient(180deg, $Purple 0%, $Violet 100%);
+    cursor: pointer;
+    transition: all 0.8s ease;
+    opacity: 0.5;
+}
+
+.button__wrap-press {
+    margin-right: 20px;
+    background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
+    border-radius: $bigRadius;
+    transition: all 0.6s ease;
+}
+
+.button__link-press {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark50;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+} 
+
+.buttons__wrap {
+    margin-bottom: 40px;
+}
+
+.button__arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 70px;
+    border: none;
+    outline: none;
+    border-radius: $bigRadius;
+    background: linear-gradient(180deg, $Purple 0%, $Violet 100%);
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button__arrow:hover {
+    background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
+}
+
+.button__arrow-text {
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
