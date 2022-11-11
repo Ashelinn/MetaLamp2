@@ -227,3 +227,147 @@ html(lang="ru")
                         p.button__arrow-text перейти к оплате
                         svg(width="18", height="18", viewBox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
+
+                //================= Buttons and links =========================
+                .buttons-title__wrap 
+                    p.input__title.mrtop-20.mrbottom-16 pagination
+                .pagination__wrap
+                    a(href="#").pagination__link-disabled 1
+                    a(href="#").pagination__link 2
+                    a(href="#").pagination__link 3
+                    a(href="#").pagination__link ...
+                    a(href="#").pagination__link 15
+                    a(href="#").pagination__arrow 
+                        svg(width="18", height="18", viewBox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
+                p.pagination__text 1 – 12 из 100+ вариантов аренды
+
+        .wrap.three-columns.mrtop-80 
+            //room amenities
+            .column
+                //================== Choise room amenities disabled ========================
+                #room__dropdown 
+                    .input-title__wrap
+                        p.input__title Dropdown
+                        p.input__text Default
+                    .input__wrap 
+                        p#amenities 2 спальни, 2 кровати...
+                        button(type="submit")#amenities__button.button-arrow
+                            img(src="./source/img/arrow_down.svg", alt="choise amenities")
+                    //bedrooms
+                    .romm__choise 
+                        .guest__line 
+                            p.guest__text спальни
+                            img(src="./source/img/minus.svg", alt="bedrooms reduce")#bedrooms-minus.guest__img-btn
+                            p#bedrooms.guests__choise 2
+                            img(src="./source/img/plus.svg", alt="bedrooms add")#bedrooms-plus.guest__img-btn
+                        //beds
+                        .guest__line 
+                            p.guest__text кровати
+                            img(src="./source/img/minus.svg", alt="beds reduce")#beds_minus.guest__img-btn
+                            p#beds.guests__choise 2
+                            img(src="./source/img/plus.svg", alt="beds add")#beds_plus.guest__img-btn
+                        //bathrooms
+                        .guest__line 
+                            p.guest__text ванные комнаты
+                            img(src="./source/img/minus.svg", alt="bathrooms reduce")#bathrooms_minus.guest__img-btn
+                            p#bathrooms.guests__choise 0
+                            img(src="./source/img/plus.svg", alt="baby add")#bathrooms_plus.guest__img-btn
+                        //confirm selection
+                        .guest__confirm 
+                            p.room__clear очистить
+                            p.room__ok применить
+
+                //================== Choise room amenities enabled ========================
+                .mrbottom-54 
+                    .input-title__wrap
+                        p.input__title Dropdown
+                        p.input__text expanded
+                    .input__wrap 
+                        p.amenities 2 спальни, 2 кровати...
+                        button(type="submit").button-arrow
+                            img(src="./source/img/arrow_down.svg", alt="choise amenities")
+                    
+                    .romm__choise.active 
+                        //bedrooms
+                        .guest__line 
+                            p.guest__text спальни
+                            img(src="./source/img/minus.svg", alt="bedrooms reduce").guest__img-btn
+                            p.guests__choise 2
+                            img(src="./source/img/plus.svg", alt="bedrooms add").guest__img-btn
+                        //beds
+                        .guest__line 
+                            p.guest__text кровати
+                            img(src="./source/img/minus.svg", alt="beds reduce").guest__img-btn
+                            p#beds.guests__choise 2
+                            img(src="./source/img/plus.svg", alt="beds add").guest__img-btn
+                        //bathrooms
+                        .guest__line 
+                            p.guest__text ванные комнаты
+                            img(src="./source/img/minus.svg", alt="bathrooms reduce").guest__img-btn
+                            p.guests__choise 0
+                            img(src="./source/img/plus.svg", alt="baby add").guest__img-btn
+                        //confirm selection
+                        .guest__confirm 
+                            p.room__clear очистить
+                            p.room__ok применить
+
+                //================== Checkbox Buttons ========================
+                .chekbox-title__wrap
+                    p.input__title Checkbox Buttons 
+                        #arrow-switch.arrow-img 
+                #checkbox__room
+                    form(validate)
+                        label.check
+                            input(type="checkbox").check__input
+                            span.check__box 
+                            p Завтрак
+                        label.check
+                            input(type="checkbox",checked).check__input
+                            span.check__box 
+                            p Письменный стол
+                        label.check
+                            input(type="checkbox",checked).check__input 
+                            span.check__box
+                            p Стул для кормления
+                        label.check
+                            input(type="checkbox",checked).check__input 
+                            span.check__box
+                            p Кроватка
+                        label.check
+                            input(type="checkbox").check__input
+                            span.check__box 
+                            p Телевизор
+                        label.check
+                            input(type="checkbox").check__input
+                            span.check__box 
+                            p Шампунь
+
+                .chekbox-title__wrap
+                    p.input__title Checkbox Buttons 
+                        .arrow-img.active  
+                form(validate)
+                    label.check
+                        input(type="checkbox").check__input
+                        span.check__box 
+                        p Завтрак
+                    label.check
+                        input(type="checkbox",checked).check__input
+                        span.check__box 
+                        p Письменный стол
+                    label.check
+                        input(type="checkbox",checked).check__input 
+                        span.check__box
+                        p Стул для кормления
+                    label.check
+                        input(type="checkbox",checked).check__input 
+                        span.check__box
+                        p Кроватка
+                    label.check
+                        input(type="checkbox").check__input
+                        span.check__box 
+                        p Телевизор
+                    label.check
+                        input(type="checkbox").check__input
+                        span.check__box 
+                        p Шампунь
