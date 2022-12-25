@@ -4,7 +4,11 @@
 .three-columns,
 .pagination__wrap {
     display: flex;
-    //justify-content: space-between;
+    justify-content: space-between;
+}
+
+.column {
+    max-width: 386px;
 }
 
 .input-title__wrap,
@@ -108,7 +112,7 @@ input::placeholder {
 /*===========================================
 Guests choise
 ===========================================*/
-#guests {
+#guests, .guests__show {
     width: 320px;
     margin: 13px 15px;
     font-size: 14px;
@@ -650,4 +654,22 @@ Checkbox Buttons Room
 
 #checkbox__room.active {
     display: block;
+}
+
+
+.text-bold {
+    font-weight: 700;
+    line-height: 18px;
+    color: $Dark75;
+}
+
+.rich-text {
+    //margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    max-width: 230px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $Dark50;
 }
