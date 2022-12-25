@@ -16,29 +16,35 @@ html(lang="ru")
         title Form elements
     
     body.bgcolor-white 
-        //gray logo and links
+        // ==============================================================
+        // gray logo and links
+        // ==============================================================
         .gray-logo__wrap 
             img(src="./source/img/gray_logo.svg", alt="gray logo Toxin")
             a(href="index.html", target="_blank").link-black Headers & footers
 
+        // ==============================================================
+        // three columns of elements
+        // ==============================================================
         .wrap.three-columns 
-            //column with inputs
+            // 1 column ================================================
+            // column with inputs
             .column 
-                //================= Text field =========================
+                // Text field Default
                 .input-title__wrap
                     p.input__title Text Field
                     p.input__text Default
                 form(validate)
                     input(type="email", placeholder="Email").input__class
                     
-                //================== Text Field ========================        
+                // Text Field Focus       
                 .input-title__wrap
                     p.input__title Text Field
                     p.input__text Hover / Focus
                 form(validate)
                         input(type="email", value="This is pretty awesome").input__class.input-dark
 
-                //================== Choise guests block ========================
+                // Choise guests block
                 #guest__dropdown 
                     .input-title__wrap
                         p.input__title Dropdown
@@ -46,37 +52,38 @@ html(lang="ru")
                         p#guests Сколько гостей
                         button(type="submit")#guests__button.button-arrow
                             img(src="./source/img/arrow_down.svg", alt="choise guests")
-                    //adults
+                    
                     .guest__choise 
+                        // adults
                         .guest__line 
                             p.guest__text взрослые
                             img(src="./source/img/minus.svg", alt="adults reduce")#adults-minus.guest__img-btn
                             p#adults.guests__choise 2
                             img(src="./source/img/plus.svg", alt="adults add")#adults-plus.guest__img-btn
-                        //children
+                        // children
                         .guest__line 
                             p.guest__text дети
                             img(src="./source/img/minus.svg", alt="children reduce")#children_minus.guest__img-btn
                             p#children.guests__choise 0
                             img(src="./source/img/plus.svg", alt="children add")#children_plus.guest__img-btn
-                        //baby
+                        // baby
                         .guest__line 
                             p.guest__text младенцы
                             img(src="./source/img/minus.svg", alt="baby reduce")#baby_minus.guest__img-btn
                             p#baby.guests__choise 0
                             img(src="./source/img/plus.svg", alt="baby add")#baby_plus.guest__img-btn
-                        //confirm selection
+                        // confirm selection
                         .guest__confirm 
                             p.guest__clear очистить
                             p.guest__ok применить
 
-                //================== Masked text field ========================
+                // Masked text field
                 .input-title__wrap
                     p.input__title masked text field
                 form(validate)
                         input(type="text", placeholder ="ДД.ММ.ГГГГ",maxlength="10")#user-date.input__class
 
-                //================== Masked text field ========================
+                // Masked text field
                 .two-input__wrap.mrtop-20
                     div.mrrh-20
                         .input-title__wrap
@@ -96,7 +103,7 @@ html(lang="ru")
                                 button(type="submit").button-arrow
                                     img(src="./source/img/arrow_down.svg", alt="choise date")       
 
-                //============ filter date dropdown ======
+                // filter date dropdown
                 .input-title__wrap.mrtop-20
                     p.input__title filter date dropdown
                 form(validate)
@@ -105,7 +112,7 @@ html(lang="ru")
                         button(type="submit").button-arrow
                             img(src="./source/img/arrow_down.svg", alt="choise date")
 
-                //============ subscription text field ======
+                // subscription text field
                 .input-title__wrap.mrtop-20
                     p.input__title subscription text field
                 form(validate)
@@ -114,10 +121,10 @@ html(lang="ru")
                         button(type="submit").button-arrow
                             img(src="./source/img/arrow_purpure.svg", alt="subscribe button")
 
-
-            //chekbox
+            // 2 column ================================================
+            // Chekboxes
             .column.side 
-                //================== Checkbox Buttons ========================
+                // Checkbox Buttons
                 .chekbox-title__wrap
                     p.input__title Checkbox Buttons
                 form(validate)
@@ -134,7 +141,7 @@ html(lang="ru")
                         span.check__box
                         p Можно пригласить гостей (до 10 человек)
 
-                //================== Radio Buttons ========================
+                // Radio Buttons 
                 .chekbox-title__wrap
                     p.input__title.mrtop-20 Radio Buttons
                 form(validate)
@@ -148,7 +155,7 @@ html(lang="ru")
                             span.radio__box 
                             p.inline-text Женщина
 
-                //================== Toggle ========================
+                // Toggle
                 .chekbox-title__wrap
                     p.input__title.mrtop-20 Toggle
                 form(validate)
@@ -162,7 +169,7 @@ html(lang="ru")
                             span.switch__box 
                             p.inline-text Получать спецпредложения
 
-                //================== Like buttons ========================
+                // Like buttons
                 .chekbox-title__wrap
                     p.input__title.mrtop-20 like button
                 .flex-content
@@ -174,7 +181,7 @@ html(lang="ru")
                         .like__heart.active
                         p#like.active 12
 
-                //================== Stars ========================
+                // Stars 
                 .chekbox-title__wrap
                     p.input__title.mrtop-20 rate button
                 .flex-content
@@ -196,10 +203,10 @@ html(lang="ru")
                                 input(type="radio", name="raiting2", value="4",aria-label="хорошо").raiting__star.raiting__star-four
                                 input(type="radio", name="raiting2", value="5",aria-label="отлично", checked).raiting__star.raiting__star-five
                         
-
-            //buttons
+            // 3 column ===========================================================
+            // buttons
             .column 
-                //================= Range Slider =========================
+                // Range Slider 
                 .input-title__wrap
                     p.input__title Range Slider
                     p.input__text.flex-content
@@ -208,7 +215,7 @@ html(lang="ru")
                 .range__container 
                     .range
                     
-                //================= Buttons and links =========================
+                // Buttons and links 
                 .buttons-title__wrap 
                     p.input__title.mrtop-20.mrbottom-16 buttons 
                 .buttons__wrap-two
@@ -228,7 +235,7 @@ html(lang="ru")
                         svg(width="18", height="18", viewBox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
 
-                //================= Buttons and links =========================
+                // Buttons and links 
                 .buttons-title__wrap 
                     p.input__title.mrtop-20.mrbottom-16 pagination
                 .pagination__wrap
@@ -242,10 +249,14 @@ html(lang="ru")
                             path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
                 p.pagination__text 1 – 12 из 100+ вариантов аренды
 
+        // ==============================================================
+        // three columns of choise
+        // ==============================================================
         .wrap.three-columns.mrtop-80 
-            //room amenities
+            // 1 column =================================================
+            // room amenities
             .column
-                //================== Choise room amenities disabled ========================
+                // Choise room amenities disabled
                 #room__dropdown 
                     .input-title__wrap
                         p.input__title Dropdown
@@ -254,31 +265,31 @@ html(lang="ru")
                         p#amenities 2 спальни, 2 кровати...
                         button(type="submit")#amenities__button.button-arrow
                             img(src="./source/img/arrow_down.svg", alt="choise amenities")
-                    //bedrooms
+                    // bedrooms
                     .romm__choise 
                         .guest__line 
                             p.guest__text спальни
                             img(src="./source/img/minus.svg", alt="bedrooms reduce")#bedrooms-minus.guest__img-btn
                             p#bedrooms.guests__choise 2
                             img(src="./source/img/plus.svg", alt="bedrooms add")#bedrooms-plus.guest__img-btn
-                        //beds
+                        // beds
                         .guest__line 
                             p.guest__text кровати
                             img(src="./source/img/minus.svg", alt="beds reduce")#beds_minus.guest__img-btn
                             p#beds.guests__choise 2
                             img(src="./source/img/plus.svg", alt="beds add")#beds_plus.guest__img-btn
-                        //bathrooms
+                        // bathrooms
                         .guest__line 
                             p.guest__text ванные комнаты
                             img(src="./source/img/minus.svg", alt="bathrooms reduce")#bathrooms_minus.guest__img-btn
                             p#bathrooms.guests__choise 0
                             img(src="./source/img/plus.svg", alt="baby add")#bathrooms_plus.guest__img-btn
-                        //confirm selection
+                        // confirm selection
                         .guest__confirm 
                             p.room__clear очистить
                             p.room__ok применить
 
-                //================== Choise room amenities enabled ========================
+                // Choise room amenities enabled 
                 .mrbottom-54 
                     .input-title__wrap
                         p.input__title Dropdown
@@ -289,32 +300,104 @@ html(lang="ru")
                             img(src="./source/img/arrow_down.svg", alt="choise amenities")
                     
                     .romm__choise.active 
-                        //bedrooms
+                        // bedrooms
                         .guest__line 
                             p.guest__text спальни
                             img(src="./source/img/minus.svg", alt="bedrooms reduce").guest__img-btn
                             p.guests__choise 2
                             img(src="./source/img/plus.svg", alt="bedrooms add").guest__img-btn
-                        //beds
+                        // beds
                         .guest__line 
                             p.guest__text кровати
                             img(src="./source/img/minus.svg", alt="beds reduce").guest__img-btn
                             p#beds.guests__choise 2
                             img(src="./source/img/plus.svg", alt="beds add").guest__img-btn
-                        //bathrooms
+                        // bathrooms
                         .guest__line 
                             p.guest__text ванные комнаты
                             img(src="./source/img/minus.svg", alt="bathrooms reduce").guest__img-btn
                             p.guests__choise 0
                             img(src="./source/img/plus.svg", alt="baby add").guest__img-btn
-                        //confirm selection
+                        // confirm selection
                         .guest__confirm 
                             p.room__clear очистить
                             p.room__ok применить
 
-                //================== Checkbox Buttons ========================
+            // 2 column ================================================
+            // choise guest 1
+            .column
+                div 
+                    .input-title__wrap
+                        p.input__title Dropdown
+                    .input__wrap 
+                        p.guests__show Сколько гостей
+                        button(type="submit").button-arrow
+                            img(src="./source/img/arrow_down.svg", alt="choise guests")
+                    // adults
+                    .guest__choise.active 
+                        .guest__line 
+                            p.guest__text взрослые
+                            img(src="./source/img/minus.svg", alt="adults reduce").guest__img-btn
+                            p.guests__choise 0
+                            img(src="./source/img/plus.svg", alt="adults add").guest__img-btn
+                        // children
+                        .guest__line 
+                            p.guest__text дети
+                            img(src="./source/img/minus.svg", alt="children reduce").guest__img-btn
+                            p.guests__choise 0
+                            img(src="./source/img/plus.svg", alt="children add").guest__img-btn
+                        // baby
+                        .guest__line 
+                            p.guest__text младенцы
+                            img(src="./source/img/minus.svg", alt="baby reduce").guest__img-btn
+                            p.guests__choise 0
+                            img(src="./source/img/plus.svg", alt="baby add").guest__img-btn
+                        // confirm selection
+                        .guest__confirm 
+                            p.guest__ok применить
+
+            // 3 column ======================================================
+            //choise guest 2
+            .column
+                div 
+                    .input-title__wrap
+                        p.input__title Dropdown
+                    .input__wrap 
+                        p.guests__show 3 гостя
+                        button(type="submit").button-arrow
+                            img(src="./source/img/arrow_down.svg", alt="choise guests")
+                    // adults
+                    .guest__choise.active 
+                        .guest__line 
+                            p.guest__text взрослые
+                            img(src="./source/img/minus.svg", alt="adults reduce").guest__img-btn
+                            p.guests__choise 2
+                            img(src="./source/img/plus.svg", alt="adults add").guest__img-btn
+                        // children
+                        .guest__line 
+                            p.guest__text дети
+                            img(src="./source/img/minus.svg", alt="children reduce").guest__img-btn
+                            p.guests__choise 1
+                            img(src="./source/img/plus.svg", alt="children add").guest__img-btn
+                        // baby
+                        .guest__line 
+                            p.guest__text младенцы
+                            img(src="./source/img/minus.svg", alt="baby reduce").guest__img-btn
+                            p.guests__choise 0
+                            img(src="./source/img/plus.svg", alt="baby add").guest__img-btn
+                        // confirm selection
+                        .guest__confirm 
+                            p.guest__clear очистить
+                            p.guest__ok применить
+
+        // ==============================================================
+        // three columns of chekboxes
+        // ==============================================================
+        .wrap.three-columns
+            // 1 column =================================================
+            .column    
                 .chekbox-title__wrap
-                    p.input__title Checkbox Buttons 
+                    p.input__title expandable checkbox list 
                         #arrow-switch.arrow-img 
                 #checkbox__room
                     form(validate)
@@ -344,7 +427,7 @@ html(lang="ru")
                             p Шампунь
 
                 .chekbox-title__wrap
-                    p.input__title Checkbox Buttons 
+                    p.input__title expandable checkbox list
                         .arrow-img.active  
                 form(validate)
                     label.check
@@ -371,3 +454,29 @@ html(lang="ru")
                         input(type="checkbox").check__input
                         span.check__box 
                         p Шампунь
+
+            // 2 column =================================================
+            .column
+                .chekbox-title__wrap
+                    p.input__title rich Checkbox Buttons
+                form(validate)
+                    label.check
+                        input(type="checkbox").check__input
+                        span.check__box 
+                        p.text-bold Завтрак
+                    p.rich-text Ширина коридоров в номере не менее 91 см.
+
+                    label.check
+                        input(type="checkbox").check__input
+                        span.check__box 
+                        p.text-bold Помощник для инвалидов
+                    p.rich-text На 1 этаже вас встретит специалист  и проводит до номера.
+
+            // 3 column =================================================
+            .column
+                .chekbox-title__wrap
+                    p.input__title bullet list
+                ul 
+                    li Нельзя с питомцами
+                    li Без вечеринок и мероприятий
+                    li Время прибытия — после 13:00, а выезд до 12:00
