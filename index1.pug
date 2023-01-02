@@ -22,6 +22,7 @@ html(lang="ru")
         .gray-logo__wrap 
             img(src="./source/img/gray_logo.svg", alt="gray logo Toxin")
             a(href="index.html", target="_blank").link-black Headers & footers
+            a(href="index2.html", target="_blank").link-black Cards
 
         // ==============================================================
         // three columns of elements
@@ -480,3 +481,38 @@ html(lang="ru")
                     li Нельзя с питомцами
                     li Без вечеринок и мероприятий
                     li Время прибытия — после 13:00, #[br] а выезд до 12:00
+
+        // ==============================================================
+        // two columns / Footer
+        // ==============================================================
+        .wrap.two-columns
+            .column-left 
+                .benefits__wrap
+                    .div 
+                        img(src="./source/img/insert_emoticon.svg", alt="emoticon")
+                    .benefits__content 
+                        .benefits__title Комфорт
+                        .benefits__text Шумопоглощающие стены
+
+                .benefits__wrap
+                    .div 
+                        img(src="./source/img/location_city.svg", alt="location")
+                    .benefits__content 
+                        .benefits__title Удобство
+                        .benefits__text Окно в каждой из спален
+
+            .column-right 
+                .review__wrap
+                    .div 
+                        img(src="./source/img/murad.jpg", alt="Murad Sarafanov")
+                    .review__content 
+                        .review__title Мурад Сарафанов
+                        .review__text 5 дней назад
+
+                .review__wrap
+                    .wdt-48
+                        .like__box.active
+                            .like__heart.active
+                            p.like.active 12
+                    .review__content 
+                        .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. #[br] И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто #[br] не жаловался из соседей.
