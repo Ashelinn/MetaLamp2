@@ -123,7 +123,7 @@ html(lang="ru")
 
             // 2 column ================================================
             // Chekboxes
-            .column.side 
+            .column
                 // Checkbox Buttons
                 .chekbox-title__wrap
                     p.input__title Checkbox Buttons
@@ -458,15 +458,15 @@ html(lang="ru")
             // 2 column =================================================
             .column
                 .chekbox-title__wrap
-                    p.input__title rich Checkbox Buttons
+                    p.input__title-rich rich Checkbox Buttons
                 form(validate)
-                    label.check
+                    label.check-rich
                         input(type="checkbox").check__input
                         span.check__box 
                         p.text-bold Завтрак
                     p.rich-text Ширина коридоров в номере не менее 91 см.
 
-                    label.check
+                    label.check-rich
                         input(type="checkbox").check__input
                         span.check__box 
                         p.text-bold Помощник для инвалидов
@@ -475,8 +475,8 @@ html(lang="ru")
             // 3 column =================================================
             .column
                 .chekbox-title__wrap
-                    p.input__title bullet list
-                ul 
+                    p.input__title-rich bullet list
+                ul.bullet-list 
                     li Нельзя с питомцами
                     li Без вечеринок и мероприятий
-                    li Время прибытия — после 13:00, а выезд до 12:00
+                    li Время прибытия — после 13:00, #[br] а выезд до 12:00
