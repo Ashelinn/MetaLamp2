@@ -148,6 +148,10 @@ p {
   margin-top: 54px;
 }
 
+.wdt-48 {
+  width: 48px;
+}
+
 /* ==========================================
  colored
 =========================================== */
@@ -431,9 +435,15 @@ footer {
  Forms element page styles
 =========================================== */
 .three-columns,
+.two-columns,
 .pagination__wrap {
   display: flex;
   justify-content: space-between;
+}
+
+.two-columns {
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 .column {
@@ -1153,6 +1163,35 @@ Checkbox Buttons Room
 
 .bullet-list li::before {
   padding-right: 10px;
+}
+
+/*footer*/
+.column-left {
+  margin-right: 156px;
+  width: 280px;
+}
+
+.benefits__wrap {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.review__wrap {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.benefits__content,
+.review__content {
+  margin-left: 10px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.benefits__title,
+.review__title {
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
