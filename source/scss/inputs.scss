@@ -8,7 +8,12 @@
 }
 
 .column {
-    max-width: 386px;
+    flex-basis: 386px;
+}
+
+.column:nth-child(2) {
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .input-title__wrap,
@@ -97,6 +102,15 @@ input::placeholder {
     color: $Dark100;
 }
 
+.input__title-rich {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+}
+
 .input__text {
     font-weight: 400;
     font-size: 12px;
@@ -125,6 +139,7 @@ Guests choise
     display: none;
     margin-top: -4px;
     padding: 7px 15px 13px 15px;
+    width: 320px;
     background:$White;
     border: 1px solid $Dark50;
     border-bottom-right-radius: $radius;
@@ -230,6 +245,15 @@ Checkbox Buttons
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-left: 30px;
+    color: rgba(31,32,65,0.5);
+    font-size: 14px;
+}
+
+.check-rich {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
     margin-left: 30px;
     color: rgba(31,32,65,0.5);
     font-size: 14px;
@@ -664,7 +688,6 @@ Checkbox Buttons Room
 }
 
 .rich-text {
-    //margin-top: 5px;
     margin-bottom: 10px;
     padding-left: 30px;
     max-width: 230px;
@@ -673,3 +696,21 @@ Checkbox Buttons Room
     line-height: 14px;
     color: $Dark50;
 }
+
+.bullet-list {
+    margin: 16px 0px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.bullet-list li {
+    margin-bottom: 10px;
+    list-style-image: url('../source/img/Ellipse.svg');
+    font-size: 14px;
+    line-height: 24px;
+    color: $Dark75;
+}
+
+.bullet-list li::before {
+    padding-right: 10px;
+   }
