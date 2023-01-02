@@ -171,6 +171,10 @@ p {
     margin-top: 54px;
 }
 
+.wdt-48 {
+    width: 48px;
+}
+
 /* ==========================================
  colored
 =========================================== */
@@ -205,4 +209,5 @@ p {
 @import 'header.scss';
 @import 'footer.scss';
 @import 'inputs.scss';
+@import 'cards.scss';
 @import 'media.scss';

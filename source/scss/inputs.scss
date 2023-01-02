@@ -2,9 +2,15 @@
  Forms element page styles
 =========================================== */
 .three-columns,
+.two-columns,
 .pagination__wrap {
     display: flex;
     justify-content: space-between;
+}
+
+.two-columns {
+    margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 .column {
@@ -714,3 +720,33 @@ Checkbox Buttons Room
 .bullet-list li::before {
     padding-right: 10px;
    }
+
+/*footer*/
+.column-left {
+    margin-right: 156px;
+    width: 280px;
+}
+
+.benefits__wrap {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $Dark1;
+}
+
+.review__wrap {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.benefits__content,
+.review__content {
+    margin-left: 10px;
+    color: $Dark75;
+}
+
+.benefits__title,
+.review__title {
+    font-weight: 700;
+
+}
