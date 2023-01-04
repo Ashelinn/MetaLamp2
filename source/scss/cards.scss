@@ -1,6 +1,7 @@
 .card-choiseRoom {
     width: 380px;
     padding: 40px 30px 30px 30px;
+    margin-bottom: 40px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -16,4 +17,45 @@
 
 .card-button__wrap {
     margin-top: 30px;
+}
+
+.card-name__wrap {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card-register__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card-button__empty {
+    margin: 2px;
+    padding: 15px 26px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $Purple;
+    border: none;
+    outline: none;
+    border-radius: $bigRadius;
+    background: $White;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.card-button__empty:hover {
+    opacity: 1;
+}
+
+.card-buttonEmpty__wrap  {
+    background: linear-gradient(180deg, $Purple 0%, $Violet 100%);
+    border-radius: $bigRadius;
+    transition: all 0.6s ease;
+}
+
+.card-buttonEmpty__wrap:hover {
+    background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
 }
