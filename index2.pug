@@ -22,3 +22,68 @@ html(lang="ru")
             img(src="./source/img/gray_logo.svg", alt="gray logo Toxin")
             a(href="index.html", target="_blank").link-black Headers & footers
             a(href="index1.html", target="_blank").link-black Form elements
+
+        .wrap.three-columns 
+            // 1 column ================================================
+            // choise room, registration
+            .column 
+                .card-choiseRoom 
+                    .card-title Найдём номера под #[br] ваши пожелания
+                    .two-input__wrap
+                        div.mrrh-20
+                            .input-title__wrap
+                                p.input__title прибытие
+                            form(validate)
+                                .input__wrap-150
+                                    p.date-gray ДД.ММ.ГГГГ
+                                    button(type="submit").button-arrow
+                                        img(src="./source/img/arrow_down.svg", alt="choise date")
+
+                        div
+                            .input-title__wrap
+                                p.input__title выезд
+                            form(validate)
+                                .input__wrap-150
+                                    p.date-gray ДД.ММ.ГГГГ
+                                    button(type="submit").button-arrow
+                                        img(src="./source/img/arrow_down.svg", alt="choise date") 
+
+                    // Choise guests block
+                    #guest__dropdown 
+                        .input-title__wrap
+                            p.input__title гости
+                        .input__wrap 
+                            p#guests Сколько гостей
+                            button(type="submit")#guests__button.button-arrow
+                                img(src="./source/img/arrow_down.svg", alt="choise guests")
+                        
+                        .guest__choise 
+                            // adults
+                            .guest__line 
+                                p.guest__text взрослые
+                                img(src="./source/img/minus.svg", alt="adults reduce")#adults-minus.guest__img-btn
+                                p#adults.guests__choise 2
+                                img(src="./source/img/plus.svg", alt="adults add")#adults-plus.guest__img-btn
+                            // children
+                            .guest__line 
+                                p.guest__text дети
+                                img(src="./source/img/minus.svg", alt="children reduce")#children_minus.guest__img-btn
+                                p#children.guests__choise 0
+                                img(src="./source/img/plus.svg", alt="children add")#children_plus.guest__img-btn
+                            // baby
+                            .guest__line 
+                                p.guest__text младенцы
+                                img(src="./source/img/minus.svg", alt="baby reduce")#baby_minus.guest__img-btn
+                                p#baby.guests__choise 0
+                                img(src="./source/img/plus.svg", alt="baby add")#baby_plus.guest__img-btn
+                            // confirm selection
+                            .guest__confirm 
+                                p.guest__clear очистить
+                                p.guest__ok применить
+
+                    //button
+                    .card-button__wrap
+                        button.button__arrow.wdt-100
+                            p.button__arrow-text перейти к оплате
+                            svg(width="18", height="18", viewBox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
