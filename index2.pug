@@ -25,7 +25,7 @@ html(lang="ru")
 
         .wrap.three-columns 
             // 1 column ================================================
-            // choise room, registration
+            // choise room
             .column 
                 .card-choiseRoom 
                     .card-title Найдём номера под #[br] ваши пожелания
@@ -84,6 +84,54 @@ html(lang="ru")
                     //button
                     .card-button__wrap
                         button.button__arrow.wdt-100
+                            p.button__arrow-text подобрать номер
+                            svg(width="18", height="18", viewBox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
+
+                //registration
+                .card-choiseRoom 
+                    .card-title Регистрация аккаунта
+                    .card-name__wrap
+                        form(validate)
+                            input(type="text", placeholder="Имя").input__class
+                            input(type="text", placeholder="Фамилия").input__class
+
+                    div
+                        label.radio 
+                            input(type="radio", name="mal", checked).radio__input 
+                            span.radio__box 
+                            p.inline-text.color-black-75 Мужчина
+                        label.radio.pdleft-20
+                            input(type="radio", name="mal").radio__input
+                            span.radio__box 
+                            p.inline-text Женщина
+
+                    .input-title__wrap
+                        p.input__title дата рождения
+                    form(validate)
+                            input(type="text", placeholder ="ДД.ММ.ГГГГ",maxlength="10")#user-date.input__class
+
+                    .input-title__wrap
+                        p.input__title данные для входа в сервис
+                    form(validate)
+                            input(type="email", placeholder="Email").input__class
+                    form(validate)
+                            input(type="password", placeholder="Пароль").input__class
+
+                    form(validate)
+                        label.switch
+                            input(type="checkbox").check__input 
+                            span.switch__box
+                            p.inline-text Получать спецпредложения
+
+
+                    .mrtop-24 
+                        button.button__arrow.wdt-100
                             p.button__arrow-text перейти к оплате
                             svg(width="18", height="18", viewBox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
                                 path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z", fill="white")
+
+                    .card-register__wrap 
+                        p.card-register__text Уже есть аккаунт на Toxin
+                        .card-buttonEmpty__wrap 
+                            button.card-button__empty войти
