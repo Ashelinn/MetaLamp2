@@ -1,4 +1,4 @@
-.card-choiseRoom {
+.card {
     width: 380px;
     padding: 40px 30px 30px 30px;
     margin-bottom: 40px;
@@ -58,4 +58,73 @@
 
 .card-buttonEmpty__wrap:hover {
     background: linear-gradient(180deg, $Purple50 0%, $Violet50 100%);
+}
+
+.card-title__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-title-violet {
+    text-transform: uppercase;
+    font-size: 12px; 
+    line-height: 15px;
+    font-weight: 700;
+    color: $Purple;
+}
+
+.card-title-gray {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: $Dark50;
+}
+
+.card-title-text {
+    font-weight: 400;
+}
+
+.card-price__wrap {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-price,
+.price-info__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    margin-bottom: 10px;
+}
+
+.price-info__wrap {
+    width: 240px;
+}
+
+.card-price__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23px;
+    color: $Dark100;
+    margin-bottom: 20px;
+}
+
+.price-info {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: $White;
+    cursor: pointer;
+}
+
+.price__total-line {
+    width: 180px;
+    border-bottom: 1px dashed $Dark100;
 }
