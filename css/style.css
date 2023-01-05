@@ -156,10 +156,6 @@ p {
   width: 48px;
 }
 
-.wdt-100 {
-  width: 100%;
-}
-
 /* ==========================================
  colored
 =========================================== */
@@ -1028,7 +1024,8 @@ buttons
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px 15px 70px;
+  padding: 15px 20px 15px 20px;
+  width: 100%;
   border: none;
   outline: none;
   border-radius: 22px;
@@ -1042,7 +1039,7 @@ buttons
 }
 
 .button__arrow-text {
-  margin-right: 50px;
+  flex-grow: 1;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -1202,7 +1199,7 @@ Checkbox Buttons Room
   font-weight: 700;
 }
 
-.card-choiseRoom {
+.card {
   width: 380px;
   padding: 40px 30px 30px 30px;
   margin-bottom: 40px;
@@ -1262,6 +1259,75 @@ Checkbox Buttons Room
 
 .card-buttonEmpty__wrap:hover {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.card-title__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-title-violet {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #BC9CFF;
+}
+
+.card-title-gray {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.card-title-text {
+  font-weight: 400;
+}
+
+.card-price__wrap {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.card-price,
+.price-info__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  margin-bottom: 10px;
+}
+
+.price-info__wrap {
+  width: 240px;
+}
+
+.card-price__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #1F2041;
+  margin-bottom: 20px;
+}
+
+.price-info {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.price__total-line {
+  width: 180px;
+  border-bottom: 1px dashed #1F2041;
 }
 
 @media (max-width: 1200px) {
