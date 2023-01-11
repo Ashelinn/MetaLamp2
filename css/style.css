@@ -1330,6 +1330,39 @@ Checkbox Buttons Room
   border-bottom: 1px dashed #1F2041;
 }
 
+.miniCard-wrap {
+  margin-bottom: 40px;
+  width: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #FFF;
+}
+
+.miniCard-content {
+  padding: 20px;
+}
+
+.card-raiting__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.card-raiting__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.card-raiting__lightText {
+  font-weight: 400;
+}
+
 @media (max-width: 1200px) {
   .wrap {
     width: 860px;
