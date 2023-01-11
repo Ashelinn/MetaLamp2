@@ -12,6 +12,13 @@ html(lang="ru")
   crossorigin="anonymous", defer)
         script(src='./source/scripts/jquery-ui.min.js', defer)
         script(src='./source/scripts/jquery.ui.touch-punch.min.js', defer)
+        //kalender
+        script(type="text/javascript", src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js")
+        script(type="text/javascript", src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")
+        script(type="text/javascript", src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")
+        link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css")
+        script(src='./source/scripts/kalender.js', defer)
+
         title Cards
     
     body.bgcolor-white 
@@ -216,3 +223,48 @@ html(lang="ru")
                         p.card-register__text Нет аккаунта на Toxin?
                         .card-buttonEmpty__wrap 
                             button.card-button__empty создать
+
+            // 3 column ================================================
+            // kalender
+            .column 
+                //room 888
+                .miniCard-wrap 
+                    .miniCard-image
+                        img(src="./source/img/room888.jpg", alt="room 888")
+                    .miniCard-content 
+                        .card-title__wrap
+                            .card-title № 888 #[span(class="card-title-violet") люкс] 
+                            p.card-title-gray 9 990₽ #[span(class="card-title-text") в сутки]
+                        .card-raiting__wrap 
+                            fieldset.raiting 
+                                .raiting__group
+                                    input(type="radio", name="raiting1", value="1",aria-label="ужасно").raiting__star.raiting__star-one
+                                    input(type="radio", name="raiting1", value="2",aria-label="плохо").raiting__star.raiting__star-two
+                                    input(type="radio", name="raiting1", value="3",aria-label="нормально").raiting__star.raiting__star-three
+                                    input(type="radio", name="raiting1", value="4",aria-label="хорошо").raiting__star.raiting__star-four
+                                    input(type="radio", name="raiting1", value="5",aria-label="отлично", checked).raiting__star.raiting__star-five
+
+                            p.card-raiting__text 145 #[span(class="card-raiting__lightText") отзывов] 
+
+                //room 840
+                .miniCard-wrap 
+                    .miniCard-image
+                        img(src="./source/img/room840.jpg", alt="room 840")
+                    .miniCard-content 
+                        .card-title__wrap
+                            .card-title № 840 
+                            p.card-title-gray 9 990₽ #[span(class="card-title-text") в сутки]
+                        .card-raiting__wrap 
+                            fieldset.raiting 
+                                .raiting__group
+                                    input(type="radio", name="raiting2", value="1",aria-label="ужасно").raiting__star.raiting__star-one
+                                    input(type="radio", name="raiting2", value="2",aria-label="плохо").raiting__star.raiting__star-two
+                                    input(type="radio", name="raiting2", value="3",aria-label="нормально").raiting__star.raiting__star-three
+                                    input(type="radio", name="raiting2", value="4",aria-label="хорошо", checked).raiting__star.raiting__star-four
+                                    input(type="radio", name="raiting2", value="5",aria-label="отлично").raiting__star.raiting__star-five
+
+                            p.card-raiting__text 65 #[span(class="card-raiting__lightText") отзывов]
+
+                
+                    
+
